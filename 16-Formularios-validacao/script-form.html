@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT FORMULARIO 16-Formulários - Validações</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">16-Formulários - Validações</h1>
+    <div class="container">
+      <pre> <!-- quebra de linhas -->
+        <code class="line-numbers language-javascript"> <!-- cores -->
+          (() => {
+            'use strict'
+          
+            const forms = document.querySelectorAll('.needs-validation')
+          
+            Array.from(forms).forEach(form => {
+              form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+          
+                form.classList.add('was-validated')
+              }, false)
+            })
+          })()
+        </code>
+      </pre>
+    </div>
+</body>
+
+</html>

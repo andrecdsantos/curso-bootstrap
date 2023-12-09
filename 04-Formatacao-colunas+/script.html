@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 04-Formatação de Colunas</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">04-Formatação de Colunas</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+
+        &lt;style>
+          .row {
+            height: 200px;
+            background: crimson;
+          }
+          .col-3{
+            background-color: antiquewhite;
+            padding: 20px;
+            border: solid 1px black;
+          }
+          &lt;/style>
+
+        &lt;h2>EXEMPLO1 ALIGN-ITEMS E ALIGN-CONTENT&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row align-items-start align-items-lg-end">&lt;!-- todas classe row é um container flex-box -->
+            &lt;!-- div.col-3{Coluna $}*3 -->
+            &lt;div class="col-3">Coluna 1&lt;/div>
+            &lt;div class="col-3 align-self-center">Coluna 2&lt;/div>
+            &lt;div class="col-3">Coluna 3&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>EXEMPLO2 JUSTIFY-CONTENT&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row justify-content-between justify-content-md-end">  
+            &lt;div class="col-3">Coluna 1&lt;/div>
+            &lt;div class="w-100">&lt;/div>&lt;!-- forçando quebra de linha entre colunas -->
+            &lt;div class="col-3">Coluna 2&lt;/div>
+            &lt;div class="col-3">Coluna 3&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>EXEMPLO3 DESLOCAMENTO DE COLUNA COM OFFSET-1 A 12 COLUNAS&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row">  
+            &lt;div class="col-3">Coluna 1&lt;/div>
+            &lt;div class="col-3 offset-1">Coluna 2&lt;/div>&lt;!-- deslocamento acontece no start da div -->
+            &lt;div class="col-3 offset-2">Coluna 3&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>EXEMPLO4 DESLOCAMENTO DE COLUNA COM MS>MARGIN-START&lt;/h2>
+        &lt;!-- me>margin-end mx>horizontal -->
+        &lt;div class="container">
+            &lt;div class="col-3">Coluna 1&lt;/div>
+            &lt;div class="col-3 ms-auto">Coluna 2&lt;/div>&lt;!-- jogando a div para direita -->
+          &lt;/div>
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

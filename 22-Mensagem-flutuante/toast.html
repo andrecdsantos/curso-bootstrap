@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT toast.js</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">22-Script toast.js</h1>
+    <pre class="my-3 language-javascript line-numbers">
+      <code>
+        const toastElList = document.querySelectorAll(".toast");
+const toastList = [...toastElList].map((toastEl) => {
+    const toast = new bootstrap.Toast(toastEl, {});
+    toast.show();
+});
+
+const btnToast = document.getElementById("btnToast");
+btnToast.addEventListener("click", () => {
+    const toast = document.getElementById("toast-exemplo");
+    const container = document.getElementById("toastContainer");
+    const novoToast = toast.cloneNode(true);
+    novoToast.lastElementChild.innerHTML = "Mensagem em " + Date();
+    container.appendChild(novoToast);
+    const bsToast = new bootstrap.Toast(novoToast, {});
+    bsToast.show();
+});
+
+const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+const tooltipList = [...tooltipTriggerList].map((tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl));
+
+const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]');
+const popoverList = [...popoverTriggerList].map((popoverTriggerEl) => new bootstrap.Popover(popoverTriggerEl));
+
+
+/* alternativo */
+const btnToast = document.getElementById("btnToast");
+    const container = document.getElementById("toastContainer");
+
+    btnToast.addEventListener("click", () => {
+      const novoToast = document.createElement("div");
+      novoToast.classList.add("toast");
+      novoToast.setAttribute("role", "alert");
+      novoToast.setAttribute("aria-live", "assertive");
+      novoToast.setAttribute("aria-atomic", "true");
+
+      novoToast.innerHTML = `
+        div class="toast-header"
+          i class="bi-info-circle me-1" /i
+          strong class="me-auto">Informação /strong
+          button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Fechar" /button
+        /div
+        div class="toast-body"
+          Mensagem em ${new Date()}
+        /div
+      `;
+
+      container.appendChild(novoToast);
+
+      const bsToast = new bootstrap.Toast(novoToast, {});
+      bsToast.show();
+    });
+
+      </code>
+    </pre>
+</body>
+
+</html>

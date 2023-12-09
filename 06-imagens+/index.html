@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+  
+  </style>
+
+  <title>06-imagens</title>
+</head>
+
+<body class="bg-primary-subtle">
+    <h1 style="text-align: center;">06-imagens</h1>
+    <h2>CLASSE IMG-FLUID PARA IMAGEM NAO ESTOURAR O TAMANHO MAX DA TELA</h2>
+    <div class="container">
+      <img src="original.png" class="img-fluid">
+    </div>
+    <div class="container">
+      <h3>img-thumbnail e rounded(border-radius)</h3>
+      <img src="original.png" class="img-fluid img-thumbnail rounded">
+    </div>
+    <div class="container">
+      <h3>posicionando img a esquerda usando float left</h3>
+      <img src="original.png" class="float-start me-3" width="150px" height="150px">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloremque cupiditate? Provident nemo cum velit consectetur ipsum sint deleniti voluptatem enim distinctio aliquam reiciendis optio fugit eaque placeat eligendi iure cumque beatae est debitis omnis, blanditiis natus voluptates! Similique ullam a dolore voluptate inventore numquam incidunt iusto harum iste eligendi eius debitis nesciunt vitae magnam totam voluptates, at libero? Facere qui, fugiat assumenda quaerat mollitia culpa doloremque vitae velit numquam ipsa dicta atque excepturi officia molestias obcaecati possimus labore id voluptatibus in quod nihil incidunt aspernatur illo beatae. Vero facere natus sed ab. Aliquid commodi quisquam impedit sed eaque mollitia excepturi officia molestias obcaecati possimus labore id voluptatibus in quod nihil incidunt aspernatur illo beatae. Vero facere natus sed ab. Aliquid commodi quisquam impedit sed eaque mollitia..</p>
+    </div>
+    <h3>centralizando img com text-center</h3>
+    <div class="container text-center">
+      <img src="original.png" width="150px" height="150px"> 
+      <!-- width e heigh nao se aplicam com a img usando a classe img-fluid -->
+    </div>
+    <h3>elemento figure e classe figure</h3>
+    <div class="container text-center">
+      <figure class="figure">
+        <img src="original.png" width="150px" height="150px"> 
+        <figcaption class="figure-caption text-end">legenda da figura</figcaption>
+      </figure>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+
+</html>

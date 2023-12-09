@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Formulários</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous" defer>
+  </script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-md text-bg-warning mb-5">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+                <i class="navbar-toggler-icon"></i>
+            </button>
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Curso bootstrap 5
+            </a>
+            <div class="navbar-collapse collapse nav-underline sticky-top justify-content-center" id="menuNavbar">
+                <div class="navbar-nav">
+                    <a href="./index.html" class="nav-link">Home</a>
+                    <a href="#" class="nav-link">Formulários</a>
+                    <a href="./index.html" class="nav-link">Outra</a>
+                    <div class="dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">submenu</a>
+                        <ul class="dropdown-menu bg-warning">
+                            <a href="#" class="dropdown-item">item 1</a>
+                            <a href="#" class="dropdown-item">item 2</a>
+                            <a href="#" class="dropdown-item">item 3</a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <form class="d-none d-md-flex">
+                <div class="input-group">
+                    <input type="search" class="form-control me-2">
+                    <button class="btn btn-dark">
+                        <i class="bi-search"></i>
+                    </button>
+                </div>
+            </form>
+        </div>
+    </nav>
+    
+    <div class="container shadow-sm">
+        <form class="p-5 text-bg-secondary rounded">
+            <div class="mb-3 form-switch form-check-reverse">
+                <label for="darkMode" class="form-check-label">Modo noturno</label>
+                <input type="checkbox" class="form-check-input" id="darkMode">
+            </div>
+            <h1 class="text-center">Formulários</h1>
+
+            <div class="mb-3">
+                <label for="nome" class="form-label">Nome</label>
+                <input type="text" id="nome" class="form-control">
+                <div class="form-text text-light">Nunca compartilharemos seus dados com terceiros</div>
+            </div>
+            <div class="input-group mb-3">
+                <label for="email" class="input-group-text">@</label>
+                <input type="text" id="email" class="form-control" placeholder="email">
+            </div>
+            <div class="mb-3 form-floating">
+                <input type="text" class="form-control" id="cep" placeholder=""  pattern="[0-9] {8}">
+                <label for="cep" class="form-label">Cep</label>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="anexo" class="form-label">Anexar arquivo</label>
+                <input type="file" id="anexo" class="form-control">
+            </div>
+            <div class="mb-3 col-3">
+                <label for="cor" class="form-label">Cor preferida</label>
+                <input type="color" id="cor" class="form-control">
+            </div>
+            <div class="mb-3 col-6">
+                <label for="cidade" class="form-label">Cidade</label>
+                <input type="text" class="form-control" list="listaCidades" placeholder="busca cidades de uma lista">
+                <datalist id="listaCidades" class="overflow-auto">
+                    <option value="Cidade 1"></option>
+                    <option value="Cidade 2"></option>
+                    <option value="Cidade 3"></option>
+                    <option value="Aracaju"></option>
+                </datalist>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="carro" class="form-label">Carro preferido</label>
+                <select id="carro" class="form-select">
+                    <option value="">gol</option>
+                    <option value="">uno</option>
+                    <option value="">207</option>
+                    <option value="">hb20</option>
+                </select>
+            </div>
+            <div class="mb-3 col-6">
+                <label for="moto" class="form-label">Moto preferida</label>
+                <select id="moto" class="form-select" multiple size="3">
+                    <option value="">bmw</option>
+                    <option value="">cb-20</option>
+                    <option value="">hayabusa</option>
+                    <option value="">honda-1000</option>
+                    <option value="">outra</option>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="brilho" class="form-label">Brilho da tela</label>
+                <input type="range" class="form-range" min="0" max="10" value="2" id="brilho">
+            </div>
+            <div class="mb-3">
+                <label for="sexo" class="form-check-label">Sexo</label>
+                <div class="form-check">
+                    <label for="marculino" class="form-check-label">Masculino</label>
+                    <input type="radio" class="form-check-input" id="masculino" name="sexo">
+                </div>
+                <div class="form-check">
+                    <label for="feminino" class="form-check-label">Feminino</label>
+                    <input type="radio" class="form-check-input" id="feminino" name="sexo">
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="estado" class="form-check-label d-block">Estado</label>
+                <div class="form-check-inline">
+                    <label for="ativado" class="form-check-label">Ativado</label>
+                    <input type="radio" class="form-check-input" id="ativado" name="estado">
+                </div>
+                <div class="form-check-inline">
+                    <label for="desativado" class="form-check-label">desativado</label>
+                    <input type="radio" class="form-check-input" id="desativado" name="estado">
+                </div>
+            </div>
+            <div class="mb-3 bg-light rounded p-3 col-6">
+                <input type="radio" name="entrega" id="entregaRapida" class="btn-check">
+                <label for="entregaRapida" class="btn btn-outline-primary">Entrega rapida</label>
+                <input type="radio" name="entrega" id="entregaPadrao" class="btn-check">
+                <label for="entregaPadrao" class="btn btn-outline-primary">Entrega padrão</label>
+            </div>
+
+            <label class="form-label d-block">Forma de pagamento</label>
+            <div class="btn-group mb-3 col-6">
+                <input type="checkbox" id="dinheiro" class="btn-check">
+                <label for="dinheiro" class="btn btn-primary">Dinheiro</label>
+                <input type="checkbox" id="cartao" class="btn-check">
+                <label for="cartao" class="btn btn-primary">Cartão</label>
+            </div>
+
+            <div class="mb-3 form-check">
+                <input type="checkbox" id="termos" class="form-check-input">
+                <label for="#termos" class="form-check-label">Li e concordo com os termos</label>
+            </div>
+            
+        </form>
+    </div>
+
+    <nav class="navbar text-bg-warning mt-5">
+        <div class="container-fluid flex-column">
+            <a href="#" class="navbar-brand d-flex align-items-center">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Curso bootstrap 5
+            </a>
+            <p class="text-center">&copy;todos dos direitos reservados @andrecdsantos0</p>
+        </div>
+    </nav>
+
+</body>
+</html>

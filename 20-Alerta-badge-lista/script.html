@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 20-Alertas, Badges e Listas</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">20-Alerta, badges, listas</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+&lt;div class="container">       
+
+&lt;div class="alert alert-danger alert-dismissible fade show my-3">
+  &lt;h4 class="alert-heading">
+    &lt;i class="bi-info-circle">&lt;/i>
+    Informação
+  &lt;/h4>
+  &lt;p>Este é um alerta simples&lt;/p>
+  &lt;button class="btn-close" data-bs-dismiss="alert">&lt;/button>
+  &lt;a href="#" class="alert-link">Clique aqui&lt;/a>
+&lt;/div>
+
+&lt;h3>Exemplo texto em capsula
+  &lt;span class="badge bg-secondary">novo&lt;/span>
+&lt;/h3>
+&lt;button class="btn btn-primary position-relative me-5">
+  Notificações
+  &lt;span class="badge text-bg-success position-absolute top-0 start-100 translate-middle rounded-pill">5&lt;/span>
+&lt;/button>
+&lt;button class="btn btn-primary position-relative me-5">
+  Notificações
+  &lt;span class="badge text-bg-success position-absolute top-0 start-100 translate-middle rounded-circle p-2"> &lt;/span>
+&lt;/button>
+&lt;button class="btn btn-primary position-relative me-5">
+  Notificações
+  &lt;span class="badge text-bg-success position-absolute top-0 start-100 translate-middle rounded-circle p-1 bi-bell"> &lt;/span>
+&lt;/button>
+
+ &lt;ul class="list-group my-4">
+  &lt;li class="list-group-item">Item 1&lt;/li>
+  &lt;li class="list-group-item active">Item 2&lt;/li>
+  &lt;li class="list-group-item">Item 3&lt;/li>
+  &lt;li class="list-group-item disabled">Item 4&lt;/li>
+  &lt;li class="list-group-item">Item 5&lt;/li>
+ &lt;/ul>
+
+ &lt;div class="list-group my-4">   
+    &lt;a class="list-group-item list-group-item-action" href="#">Link 1&lt;/a>
+    &lt;a class="list-group-item list-group-item-action" href="#">Link 2&lt;/a>
+    &lt;a class="list-group-item list-group-item-action" href="#">Link 3&lt;/a>
+    &lt;a class="list-group-item list-group-item-action" href="#">Link 4&lt;/a>
+    &lt;a class="list-group-item list-group-item-action" href="#">Link 5&lt;/a>
+ &lt;/div>
+
+ &lt;div class="list-group list-group-flush my-4">   
+  &lt;button class="list-group-item list-group-item-action" href="#">Botão 1&lt;/button>
+  &lt;button class="list-group-item list-group-item-action" href="#">Botão 2&lt;/button>
+  &lt;button class="list-group-item list-group-item-action" href="#">Botão 3&lt;/button>
+  &lt;button class="list-group-item list-group-item-action" href="#">Botão 4&lt;/button>
+  &lt;button class="list-group-item list-group-item-action" href="#">Botão 5&lt;/button>
+ &lt;/div>
+
+ &lt;ol class="list-group list-group-numbered my-4">
+  &lt;li class="list-group-item">Item 1&lt;/li>
+  &lt;li class="list-group-item">Item 2&lt;/li>
+  &lt;li class="list-group-item">Item 3&lt;/li>
+  &lt;li class="list-group-item">Item 4&lt;/li>
+  &lt;li class="list-group-item">Item 5&lt;/li>
+ &lt;/ol>
+
+ &lt;div class="list-group">
+  &lt;a href="#" class="list-group-item list-group-item-action">
+    &lt;div class="d-flex w-100 justify-content-between">
+      &lt;h5 class="mb-1">Titulo da noticia&lt;/h5>
+      &lt;small>5 dias atras&lt;/small>
+    &lt;/div>
+    &lt;p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem consequatur officiis quis distinctio cupiditate, nesciunt delectus illo vero maxime nostrum. Dignissimos odit, et assumenda eos dolore veritatis aliquid excepturi? Labore dolores eos, officiis asperiores quisquam neque non vel, deserunt sapiente officia vero laudantium debitis recusandae eveniet cumque saepe magni!&lt;/p>
+    &lt;small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore neque harum a! Accusantium, possimus, saepe, molestiae perspiciatis ducimus eligendi ipsa aliquid voluptatem ipsam accusamus veritatis quisquam placeat expedita corrupti incidunt!&lt;/small>
+  &lt;/a>
+
+  &lt;a href="#" class="list-group-item list-group-item-action bg-warning-subtle">
+    &lt;div class="d-flex w-100 justify-content-between">
+      &lt;h5 class="mb-1">Titulo da noticia 2&lt;/h5>
+      &lt;small>5 dias atras&lt;/small>
+    &lt;/div>
+    &lt;p class="mb-1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui exercitationem consequatur officiis quis distinctio cupiditate, nesciunt delectus illo vero maxime nostrum. Dignissimos odit, et assumenda eos dolore veritatis aliquid excepturi? Labore dolores eos, officiis asperiores quisquam neque non vel, deserunt sapiente officia vero laudantium debitis recusandae eveniet cumque saepe magni!&lt;/p>
+    &lt;small class="text-muted">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore neque harum a! Accusantium, possimus, saepe, molestiae perspiciatis ducimus eligendi ipsa aliquid voluptatem ipsam accusamus veritatis quisquam placeat expedita corrupti incidunt!&lt;/small>
+  &lt;/a>
+ &lt;/div>
+
+&lt;/div>
+
+      </code>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer></script>
+  <link rel="stylesheet" href="./style.css">
+
+  <style>
+    .row {
+      height: 200px;
+      background: crimson;
+    }
+    .col-3{
+      background-color: antiquewhite;
+      padding: 20px;
+      border: solid 1px black;
+    }
+  </style>
+
+  <title>04-Formatação de colunas</title>
+</head>
+
+<body>
+    <h1 style="text-align: center;">04-Formatação de Colunas</h1>
+    <h2>EXEMPLO1 ALIGN-ITEMS E ALIGN-CONTENT</h2>
+    <div class="container">
+      <div class="row align-items-start align-items-lg-end"><!-- todas classe row é um container flex-box -->
+        <!-- div.col-3{Coluna $}*3 -->
+        <div class="col-3">Coluna 1</div>
+        <div class="col-3 align-self-center">Coluna 2</div>
+        <div class="col-3">Coluna 3</div>
+      </div>
+    </div>
+    <h2>EXEMPLO2 JUSTIFY-CONTENT</h2>
+    <div class="container">
+      <div class="row justify-content-between justify-content-md-end">  
+        <div class="col-3">Coluna 1</div>
+        <div class="w-100"></div><!-- forçando quebra de linha entre colunas -->
+        <div class="col-3">Coluna 2</div>
+        <div class="col-3">Coluna 3</div>
+      </div>
+    </div>
+    <h2>EXEMPLO3 DESLOCAMENTO DE COLUNA COM OFFSET-1 A 12 COLUNAS</h2>
+    <div class="container">
+      <div class="row">  
+        <div class="col-3">Coluna 1</div>
+        <div class="col-3 offset-1">Coluna 2</div><!-- deslocamento acontece no start da div -->
+        <div class="col-3 offset-2">Coluna 3</div>
+      </div>
+    </div>
+    <h2>EXEMPLO4 DESLOCAMENTO DE COLUNA COM MS>MARGIN-START</h2>
+    <!-- me>margin-end mx>horizontal -->
+    <div class="container">
+        <div class="col-3">Coluna 1</div>
+        <div class="col-3 ms-auto">Coluna 2</div><!-- jogando a div para direita -->
+      </div>
+    </div>
+    <script src="./app.js" type="module"></script>
+  </body>
+
+</html>

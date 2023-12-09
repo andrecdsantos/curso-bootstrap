@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+    <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+  <title>Position</title>
+</head>
+
+<body>
+  <h1 style="text-align: center;">13-Position</h1>
+  <div class="text-bg-primary p-4 mt-5">esta por baixo da div preta</div>
+  <div class="text-bg-warning p-4 fixed-bottom">fixed-bottom</div>
+  <div class="text-bg-dark p-4 fixed-top">fixed-top</div>
+  <div class="container bg-danger m-5 p-3 position-relative">
+    <div class="p-3 bg-primary">div1</div>
+    <div class="p-3 bg-secondary position-absolute z-2 top-0 start-50">position-absolute z-2 z-2 top-0 start-50</div>
+    <div class="p-3 bg-info position-relative">div3 start-50 fez o elemento começar do meio da pagina</div>
+  </div>
+  <div class="container bg-danger m-5 p-3 vstack gap-3">
+    <div class="p-3 bg-primary">adicionando vstack = flex-row para poder usar gap</div>
+    <div class="p-3 bg-secondary">gap-3 no pai</div>
+    <div class="p-3 bg-info"></div>
+  </div>
+  <div class="container bg-danger m-5 p-3 hstack gap-3">
+    <div class="p-3 bg-primary">adicionando hstack = flex para poder usar gap</div>
+    <div class="p-3 bg-secondary">gap-3 no pai</div>
+    <div class="p-3 bg-info">teste</div>
+  </div>
+    <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur .Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque 
+    </p> 
+      
+      <div class="text-bg-success p-5 sticky-bottom sticky-top">
+        sticky-bottom e sticky-top
+      </div>
+    <p class="lead">
+      asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur .Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur repudiandae tempore. Praesentium sit, perferendis dolorem consectetur ipsam error nemo a eaque qui placeat. A unde odio magni eligendi beatae pariatur libero corrupti voluptatum nobis sed aliquam eum deleniti dignissimos, ex velit soluta sapiente rerum maxime distinctio accusantium. USANDO INVISIBLE para mostrar o elemento de cima e ele n ficar por debaixo do fixed  FIM DO TEXTO.</p>
+    <div class="text-bg-warning p-4 invisible">
+      usando tecnica invisible para mostrar o elemento de cima e ele n ficar por debaixo do fixed
+    </div>
+    <div class="text-bg-warning p-4 fixed-bottom">fixed-bottom</div>
+    <script src="./app.js" type="module"></script>
+  </body>
+
+</html>

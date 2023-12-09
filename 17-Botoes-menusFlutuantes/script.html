@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 17-Botões Menus Flutuantes</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      Prism.highlightAll();
+    });
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">17-Botões Menus Flutuantes</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container">
+          teste
+        &lt;/div&gt;
+        &lt;div class="container py-5 bg-warning-subtle"&gt;
+          &lt;div class="btn-group mb-3"&gt;
+            &lt;button class="btn btn-primary"&gt;Botão 1&lt;/button&gt;
+            &lt;button class="btn btn-success"&gt;Botão 2&lt;/button&gt;
+            &lt;button class="btn btn-danger"&gt;Botão 3&lt;/button&gt;
+          &lt;/div&gt;
+    
+          &lt;div class="btn-group mb-3"&gt;
+            &lt;input type="radio" name="meu-grupo" id="btn1" class="btn-check"&gt;
+            &lt;label for="btn1" class="btn btn-outline-primary"&gt;btn radio 1&lt;/label&gt;
+            &lt;input type="radio" name="meu-grupo" id="btn2" class="btn-check"&gt;
+            &lt;label for="btn2" class="btn btn-outline-primary"&gt;btn radio 2&lt;/label&gt;
+            &lt;input type="radio" name="meu-grupo" id="btn3" class="btn-check"&gt;
+            &lt;label for="btn3" class="btn btn-outline-primary"&gt;btn radio 3&lt;/label&gt;
+          &lt;/div&gt;
+    
+          &lt;div class="btn-group mb-3"&gt;
+            &lt;input type="checkbox" id="btn4" class="btn-check"&gt;
+            &lt;label for="btn4" class="btn btn-outline-primary"&gt;btn check 4&lt;/label&gt;
+            &lt;input type="checkbox" id="btn5" class="btn-check"&gt;
+            &lt;label for="btn5" class="btn btn-outline-primary"&gt;btn check 5&lt;/label&gt;
+            &lt;input type="checkbox" id="btn6" class="btn-check"&gt;
+            &lt;label for="btn6" class="btn btn-outline-primary"&gt;btn check 6&lt;/label&gt;
+          &lt;/div&gt;
+    
+          &lt;div class="btn-toolbar"&gt;
+            &lt;div class="btn-group mb-3 me-2"&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-folder2-open"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-save"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-paperclip"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-image"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+            
+            &lt;div class="btn-group mb-3 me-2"&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-folder2-open"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-save"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-paperclip"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-image"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+            &lt;/div&gt;
+    
+            &lt;div class="btn-group mb-3 me-2"&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-folder2-open"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+              &lt;button class="btn btn-primary"&gt;
+                &lt;i class="bi-save"&gt;&lt;/i&gt;
+              &lt;/button&gt;
+    
+              &lt;div class="input-group ms-3"&gt;
+                &lt;input type="search" class="form-control"&gt;
+                &lt;button class="btn btn-primary"&gt;
+                  &lt;i class="bi-search"&gt;&lt;/i&gt;
+                &lt;/button&gt;
+              &lt;/div&gt;
+            &lt;/div&gt;
+    
+            &lt;div class="dropdown"&gt;
+              &lt;button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown"&gt;
+                Submenu
+              &lt;/button&gt;
+              &lt;ul class="dropdown-menu"&gt;
+                &lt;li&gt;
+                  &lt;a href="#" class="dropdown-item"&gt;
+                    opcao 1
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#" class="dropdown-item"&gt;
+                    opcao 2
+                  &lt;/a&gt;
+                &lt;/li&gt;
+                &lt;li&gt;
+                  &lt;a href="#" class="dropdown-item"&gt;
+                    opcao 3
+                  &lt;/a&gt;
+                &lt;/li&gt;
+              &lt;/ul&gt;
+            &lt;/div&gt;
+    
+          &lt;/div&gt;
+        &lt;/div&gt;
+
+      </code>
+    </pre>
+</body>
+
+</html>

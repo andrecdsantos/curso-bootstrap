@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>Componentes Simples</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+</head>
+
+<body class="bg-body-secondary">
+    <h1 class="text-center">24-Componentes Simples</h1>
+    <div class="container my-5 pb-5">
+
+      <nav class="breadcrumb" style="--bs-breadcrumb-divider: ' > '">
+        <li class="breadcrumb-item">
+          <a href="#">Home</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">Componentes Simples</a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#">Html</a>
+        </li>
+      </nav>
+
+      <div class="d-block text-danger spinner-border spinner-border-sm my-3"></div>
+      <div class="d-block spinner-grow text-success my-3"></div>
+      <div class="d-block spinner-grow text-bg-info my-3" style="width: 100px; height: 100px;"></div>
+      
+      <div class="progress bg-dark my-3">
+        <div class="progress-bar w-50">50%</div>
+      </div>
+      <div class="progress bg-dark my-3">
+        <div class="progress-bar progress-bar-striped w-50">50%</div>
+      </div>
+      <div class="progress bg-dark my-3" style="height: 50px;">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-50" >50%</div>
+      </div>
+      <div class="bg-secondary p-5 my-3">
+        <div class="progress">
+          <div class="progress-bar w-25 bg-primary">25%</div>
+          <div class="progress-bar w-25 bg-warning">50%</div>
+          <div class="progress-bar w-25 bg-danger">75%</div>
+        </div>
+      </div>
+
+      <div class="my-3">
+        <button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#painel">Mostrar</button>
+      </div>
+      <div id="painel" class="collapse collapse-horizontal text-bg-info p-3 rounded">
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis facilis nostrum sequi molestias magnam libero possimus odio soluta ullam in.
+        </p>
+      </div>
+
+      <ul class="pagination pagination-sm justify-content-center my-3">
+        <li class="page-item active">
+          <a href="#" class="page-link">1</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">2</a>
+        </li>
+        <li class="page-item disabled">
+          <a href="#" class="page-link">3</a>
+        </li>
+        <li class="page-item">
+          <a href="#" class="page-link">4</a>
+        </li>
+      </ul>
+      
+    </div>
+</body>
+
+</html>

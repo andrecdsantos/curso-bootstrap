@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 29 - Scroll navegação</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">29 - Scroll navegação</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;nav class="navbar bg-info-subtle sticky-top navbar-expand-sm mb-3">
+        &lt;div class="container-fluid">
+          &lt;a href="#" class="navbar-brand d-flex align-items-center">
+            &lt;i class="bi-bootstrap-fill fs-1 me-2">&lt;/i>
+            Bootstrap 5
+          &lt;/a>
+          &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+            &lt;span class="navbar-toggler-icon">&lt;/span>
+          &lt;/button>
+          &lt;div class="collapse navbar-collapse justify-content-center" id="menuNavbar">
+            &lt;div class="navbar-nav">
+              &lt;a href="#" class="nav-link active" id="homeMenu">Principal&lt;/a>
+              &lt;a href="#" class="nav-link" id="produtosMenu">Produtos&lt;/a>
+              &lt;a href="#" class="nav-link" id="contatoMenu">Contato&lt;/a>
+              &lt;a href="#" class="nav-link" id="sobreMenu">Sobre&lt;/a>
+            &lt;/div>
+          &lt;/div>
+          &lt;form action="" class="d-flex">
+            &lt;div class="input-group">
+              &lt;input type="search" class="form-control me-2" placeholder="Buscar...">
+              &lt;button class="btn btn-outline-primary">Buscar&lt;/button>
+            &lt;/div>
+          &lt;/form>
+        &lt;/div>
+      &lt;/nav>
+      
+      &lt;div class="principal bg-danger">principal&lt;/div>
+      &lt;div class="produtos bg-success">produtos&lt;/div>
+      &lt;div class="contato bg-primary">contato&lt;/div>
+      &lt;div class="sobre bg-warning">sobre&lt;/div>
+      </code>
+    </pre>
+
+
+    <h1 style="text-align: center;">SCRIPT</h1>
+    <pre class="my-3 language-javascript line-numbers">
+      <code>
+        document.addEventListener('DOMContentLoaded', function () {
+          let navLinks = document.querySelectorAll('.nav-link');
+          let principal = document.querySelector('.principal');
+          let produtos = document.querySelector('.produtos');
+          let contato = document.querySelector('.contato');
+          let sobre = document.querySelector('.sobre');
+
+          navLinks.forEach(function (navLink) {
+              navLink.addEventListener('click', function(event) {
+                  event.preventDefault();  // Impede o comportamento padrão do link
+                  if (navLink.id === 'homeMenu') {
+                      scrollToSection(principal);
+                  } else if (navLink.id === 'produtosMenu') {
+                      scrollToSection(produtos);
+                  } else if (navLink.id === 'contatoMenu') {
+                      scrollToSection(contato);
+                  } else if (navLink.id === 'sobreMenu') {
+                      scrollToSection(sobre);
+                  }
+              });
+          });
+
+          function scrollToSection(section) {
+              // Calcula a posição da parte superior da seção
+              let sectionTop = section.offsetTop;
+
+              // Rola suavemente para a posição da seção
+              window.scrollTo({
+                  top: sectionTop,
+                  behavior: 'smooth'
+              });
+          }
+      });
+      </code>
+    </pre>
+</body>
+
+</html>

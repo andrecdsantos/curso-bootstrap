@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 12-Configuraçoes de Visibilidade, Overflow</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">12-Configuraçoes de Visibilidade, Overflow</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;header class="text-bg-danger">
+        &lt;div class="container d-flex align-items-center">
+          &lt;h1 class="display-1">12-Display Overflow&lt;/h1>
+          &lt;nav class="col">
+            &lt;ul class="list-unstyled d-flex justify-content-center column-gap-3">
+              &lt;li>&lt;a href="#">Home&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">Sobre&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">Contato&lt;/a>&lt;/li>
+              &lt;li>&lt;a href="#">Mais&lt;/a>&lt;/li>
+            &lt;/ul>
+          &lt;/nav>
+        &lt;/div>
+      &lt;/header>
+      
+      &lt;h1>simulaçao de artigo abaixo&lt;/h1>
+      &lt;header class="text-bg-dark d-print-none">
+        &lt;div class="container d-flex align-items-center">
+          &lt;h1 class="display-1">Cabeçalho&lt;/h1>
+          &lt;div>
+            d-print-none, em modo impressao o elemento nao aparece
+          &lt;/div>
+        &lt;/div>
+      &lt;/header>
+      &lt;!-- article.container.my-3>h1.mb-4{Titulo do artigo}+(p*4) -->
+      &lt;article class="container my-3">
+        &lt;h1 class="mb-4">Titulo do artigo&lt;/h1>
+        &lt;p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quidem vel repellendus nisi doloremque obcaecati laborum, aliquam doloribus illo esse dicta perferendis laudantium saepe ipsa eius impedit est dolorum nobis!&lt;/p>
+        &lt;p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quidem vel repellendus nisi doloremque obcaecati laborum, aliquam doloribus illo esse dicta perferendis laudantium saepe ipsa eius impedit est dolorum nobis!&lt;/p>
+        &lt;p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit quidem vel repellendus nisi doloremque obcaecati laborum, aliquam doloribus illo esse dicta perferendis laudantium saepe ipsa eius impedit est dolorum nobis!&lt;/p>
+        &lt;p class="d-print-block">Fonte: meusite.com.br >>> d-print-none + d-print-block&lt;/p>
+      &lt;/article>
+      
+      
+      &lt;div class="text-bg-info col-3 p-4 m-3 d-block">
+        text-bg-info col-3 p-4 m-3 d-block
+      &lt;/div>
+      &lt;div class="text-bg-success col-3 p-4 m-3 d-block">
+        text-bg-success col-3 p-4 m-3 d-block
+      &lt;/div>
+      &lt;div class="text-bg-warning col-3 p-4 m-3 d-block">
+        text-bg-warning col-3 p-4 m-3 d-block
+      &lt;/div>
+      
+      &lt;hr>
+      &lt;div class="text-bg-primary col-3 p-4 m-3 d-block mt-5">
+        div invisible no meio
+      &lt;/div>
+      &lt;div class="text-bg-success col-3 p-4 m-3 invisible">
+        text-bg-success col-3 p-4 m-3 d-block
+      &lt;/div>
+      &lt;div class="text-bg-primary col-3 p-4 m-3 d-block">
+        div invisible no meio
+      &lt;/div>
+      &lt;hr>
+      
+      &lt;div class="text-bg-info col-3 p-4 m-3 d-inline-block">
+        text-bg-info col-3 p-4 m-3 d-inline-block
+      &lt;/div>
+      &lt;div class="text-bg-success col-3 p-4 m-3 d-inline-block">
+        text-bg-success col-3 p-4 m-3 d-inline-block
+      &lt;/div>
+      &lt;div class="text-bg-warning col-3 p-4 m-3 d-inline-block">
+        text-bg-warning col-3 p-4 m-3 d-inline-block
+      &lt;/div>
+      
+      &lt;h1>overflow&lt;/h1>
+      &lt;div class="container text-bg-info m-3">
+        &lt;div class="row">
+          &lt;div class="border p-2 col-3 overflow-auto">border p-2 col-3 overflow-auto adipisicing elit. Ut laborum illo alias adipisci asperiores non exercitationem reiciendis porro pariatur est assumenda quod qui nam, repellendus dolore quos, quisquam sit quo.&lt;/div>
+          &lt;div class="border p-2 col-3 overflow-hidden">border p-2 col-3 overflow-hidden adipisicing elit. Nobis, nostrum. Ullam quaerat illum a laudantium facere magni fugiat qui eveniet, nihil ex velit, corporis dignissimos, deleniti sapiente ut voluptatum numquam!&lt;/div>
+          &lt;div class="border p-2 col-3 overflow-visible">border p-2 col-3 overflow-visible adipisicing elit. Porro corrupti in facere rem asperiores, aperiam hic ab facilis tenetur officia inventore minima molestias libero harum tempora doloribus, possimus, consectetur unde?&lt;/div>
+          &lt;div class="border p-2 col-3 overflow-scroll">border p-2 col-3 overflow-scroll adipisicing elit. Exercitationem impedit hic adipisci perferendis libero odio cum cumque dignissimos magnam voluptatibus dolor nobis, expedita excepturi non a vel ut commodi culpa?&lt;/div>
+        &lt;/div>
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

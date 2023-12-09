@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 08-Cores e Opacidade</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">08-Cores e Opacidade</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container bg-primary mb-2">
+        &lt;h3 class="bg-primary-subtle">bg-primary-subtle&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+        &lt;h3 class="text-bg-primary bg-gradient">bg-gradient&lt;/h3>
+      &lt;/div>
+      &lt;div class="container bg-secondary mb-2">
+        &lt;h3 class="bg-secondary-subtle">secondary&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-success mb-2">
+        &lt;h3 class="bg-success-subtle">success&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-danger mb-2">
+        &lt;h3 class="bg-danger-subtle">danger&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-warning mb-2">
+        &lt;h3 class="bg-warning-subtle">warning&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-info mb-2">
+        &lt;h3 class="bg-info-subtle">info&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-light mb-2">
+        &lt;h3 class="bg-light-subtle">light&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-dark mb-2">
+        &lt;h3 class="bg-danger-subtle">dark&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      &lt;div class="container bg-transparent mb-2">
+        &lt;h3>transparent&lt;/h3>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloribus harum velit eligendi provident quisquam nihil hic aliquid ullam corporis voluptatibus.
+      &lt;/div>
+      
+      
+      &lt;h1>text-bg-cor contraste cor de fundo e fonte&lt;/h1>
+      &lt;div class="container text-bg-primary mb-2">
+        &lt;h3>text-bg-primary&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-secondary mb-2">
+        &lt;h3>text-bg-secondary&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-success mb-2">
+        &lt;h3>text-bg-success&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-danger mb-2">
+        &lt;h3>text-bg-danger&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-warning mb-2">
+        &lt;h3>text-bg-warning&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-info mb-2">
+        &lt;h3>text-bg-info&lt;/h3>
+      &lt;/div>
+      &lt;div class="container text-bg-dark mb-2">
+        &lt;h3>text-bg-dark&lt;/h3>
+      &lt;/div>
+      
+      
+      &lt;h1>cores de texto extras&lt;/h1>
+      &lt;h3 class="text-muted">text-muted&lt;/h3>
+      &lt;h3 class="text-white bg-dark">text-white&lt;/h3>
+      &lt;h3 class="text-primary">text-primary&lt;/h3>
+      &lt;h3 class="text-primary-emphasis">text-primary-emphasis&lt;/h3>
+      &lt;h3 class="text-secondary">text-secondary&lt;/h3>
+      &lt;h3 class="text-secondary-emphasis">text-secondary-emphasis&lt;/h3>
+      &lt;h3 class="text-success">text-success&lt;/h3>
+      &lt;h3 class="text-success-emphasis">text-success-emphasis&lt;/h3>
+      &lt;h3 class="text-danger">text-danger&lt;/h3>
+      &lt;h3 class="text-danger-emphasis">text-danger-emphasis&lt;/h3>
+      &lt;h3 class="text-warning">text-warning&lt;/h3>
+      &lt;h3 class="text-warning-emphasis">text-warning-emphasis&lt;/h3>
+      &lt;h3 class="text-info">text-info&lt;/h3>
+      &lt;h3 class="text-info-emphasis">text-info-emphasis&lt;/h3>
+      &lt;h3 class="text-">&lt;/h3>
+      
+      
+      &lt;h1>opacidade de bg e de text&lt;/h1>
+      &lt;h3 class="text-success text-opacity-50">text-success text-opacity-50&lt;/h3>
+      &lt;h3 class="text-bg-success opacity-50">bg-success opacity-50&lt;/h3>
+      
+      
+      &lt;h1>LINKS&lt;/h1>
+      &lt;a href="#">sem nada&lt;/a>
+      &lt;a href="#" class="link-primary">link-primary&lt;/a>
+      &lt;a href="#" class="link-secondary">link-secondary&lt;/a>
+      &lt;a href="#" class="link-success">link-success&lt;/a>
+      &lt;a href="#" class="link-danger">link-danger&lt;/a>
+      &lt;a href="#" class="link-warning">link-warning&lt;/a>
+      &lt;a href="#" class="link-info">link-info&lt;/a>
+      &lt;h1>TROCANDO O UNDERLINE DELINKS&lt;/h1>
+      &lt;a href="#" class="link-underline-danger">link-underline-danger&lt;/a>
+      &lt;a href="#" class="link-underline-success">link-underline-success&lt;/a>
+      </code>
+    </pre>
+</body>
+
+</html>

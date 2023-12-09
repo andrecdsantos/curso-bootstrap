@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 27-ProgressBar.js</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">27- ProgressBar.js</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="bg-success" style="height: 200vh;"> 
+        &lt;h1 class="text-center">27 - ProgressBar.js &lt;/h1>
+      &lt;/div>
+      &lt;div id="data-area">
+        &lt;div class="container">
+            &lt;div class="row">
+                &lt;div class="col-md-3 circle-box">
+                    &lt;div id="circleA">
+                        &lt;p>Projetos entregues&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="col-md-3 circle-box">
+                    &lt;div id="circleB">
+                        &lt;p>Clietes felizes&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="col-md-3 circle-box">
+                    &lt;div id="circleC">
+                        &lt;p>Colaboradores&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+                &lt;div class="col-md-3 circle-box">
+                    &lt;div id="circleD">
+                        &lt;p>Cafézinhos&lt;/p>
+                    &lt;/div>
+                &lt;/div>
+            &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      </code>
+    </pre>
+
+
+    <h1 style="text-align: center;">SCRIPT</h1>
+    <pre class="my-3 language-javascript line-numbers">
+      <code>
+        document.addEventListener('DOMContentLoaded', function() {
+          let containerA = document.querySelector('#circleA');
+          let circleA = new ProgressBar.Circle(containerA, {
+              color: '#64DAF9',
+              strokeWidth: 8,
+              duration: 1400,
+              from: { color: '#AAA'},
+              to: { color: '#65DAF9'},
+              step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  let value = Math.round(circle.value() * 60);
+      
+                  circle.setText(value);
+              }
+          });
+      
+          let containerB = document.querySelector('#circleB');
+          let containerC = document.querySelector('#circleC');
+          let containerD = document.querySelector('#circleD');
+      
+          let circleB = new ProgressBar.Circle(containerB, {
+              color: '#64DAF9',
+              strokeWidth: 8,
+              duration: 1600,
+              from: { color: '#AAA'},
+              to: { color: '#65DAF9'},
+              step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  let value = Math.round(circle.value() * 254);
+      
+                  circle.setText(value);
+              }
+          });
+      
+          let circleC = new ProgressBar.Circle(containerC, {
+              color: '#64DAF9',
+              strokeWidth: 8,
+              duration: 2000,
+              from: { color: '#AAA'},
+              to: { color: '#65DAF9'},
+              step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  let value = Math.round(circle.value() * 32);
+      
+                  circle.setText(value);
+              }
+          });
+      
+          let circleD = new ProgressBar.Circle(containerD, {
+              color: '#64DAF9',
+              strokeWidth: 8,
+              duration: 2200,
+              from: { color: '#AAA'},
+              to: { color: '#65DAF9'},
+              step: function(state, circle) {
+                  circle.path.setAttribute('stroke', state.color);
+                  let value = Math.round(circle.value() * 5243);
+      
+                  circle.setText(value);
+              }
+          });
+      
+          // Iniciando a animação quando chega no elemento
+          let dataAreaOffsetTop = document.querySelector('#data-area').offsetTop;
+          let stop = 0;
+      
+          window.addEventListener('scroll', function() {
+              let scroll = window.scrollY;
+              if (scroll > (dataAreaOffsetTop - 500) && stop === 0) {
+                  circleA.animate(1.0);
+                  circleB.animate(1.0);
+                  circleC.animate(1.0);
+                  circleD.animate(1.0);
+      
+                  stop = 1;
+              }
+          });
+      });
+      </code>
+    </pre>
+
+</body>
+
+</html>

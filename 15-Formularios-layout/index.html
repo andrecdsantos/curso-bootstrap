@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+    <link rel="stylesheet" href="./style.css">
+  <style>
+    
+  </style>
+  <title>15-Formulários - Layout</title>
+</head>
+
+<body>
+    <h1 class="text-center">15-Formulários - Layout</h1>
+    <div class="container bg-primary-subtle p-5 mt-2 mb-5 rounded-3">
+      <div class="row mb-3 g-2"> 
+        <div class="col">
+          <input type="text" class="form-control" placeholder="campo1">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="campo2">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="campo3">
+        </div>
+        <div class="col">
+          <input type="text" class="form-control" placeholder="campo4">
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-primary-subtle p-5 mb-5 rounded-3">
+      <div class="row mb-3"> 
+        <label for="" class="col-form-label-lg col-4 text-end">E-mail</label>
+        <div class="col-8">
+          <input type="email" class="form-control" placeholder="col-form-label deixa os campos alinhados horizoltalmente">
+        </div>
+      </div>
+    </div>
+
+    <div class="container bg-primary-subtle p-5 mb-5 rounded-3">
+      <h1 class="display-3">Formulario</h1>
+      <hr>
+      <div class="row mb-3 g-3"> 
+
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" id="logradouro" class="form-control" placeholder="gutter g-3 é o espaçamento entre os campos">
+        </div>
+        <div class="col-2">
+          <label for="numero" class="form-label">Numero</label>
+          <input type="text" id="numero" class="form-control">
+        </div>
+        <div class="col-3">
+          <label for="comlemento" class="form-label">Comlemento</label>
+          <input type="text" id="comlemento" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" id="bairro" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" id="cidade" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="estado" class="form-label">Estado</label>
+          <input type="text" id="estado" class="form-control">
+        </div>
+        <div class="col-2">
+          <label for="cep" class="form-label">Cep</label>
+          <input type="text" id="cep" class="form-control">
+        </div>
+        
+      </div>
+      <button class="btn btn-primary">Cadastrar</button>
+    </div>
+
+  </body>
+
+</html>

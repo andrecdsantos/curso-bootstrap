@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 15-Formulários - Layout</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">15-Formulários - Layout</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container bg-primary-subtle p-5 mt-2 mb-5 rounded-3">
+        &lt;div class="row mb-3 g-2"> 
+          &lt;div class="col">
+            &lt;input type="text" class="form-control" placeholder="campo1">
+          &lt;/div>
+          &lt;div class="col">
+            &lt;input type="text" class="form-control" placeholder="campo2">
+          &lt;/div>
+          &lt;div class="col">
+            &lt;input type="text" class="form-control" placeholder="campo3">
+          &lt;/div>
+          &lt;div class="col">
+            &lt;input type="text" class="form-control" placeholder="campo4">
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      
+      &lt;div class="container bg-primary-subtle p-5 mb-5 rounded-3">
+        &lt;div class="row mb-3"> 
+          &lt;label for="" class="col-form-label-lg col-4 text-end">E-mail&lt;/label>
+          &lt;div class="col-8">
+            &lt;input type="email" class="form-control" placeholder="col-form-label deixa os campos alinhados horizoltalmente">
+          &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      
+      &lt;div class="container bg-primary-subtle p-5 mb-5 rounded-3">
+        &lt;h1 class="display-3">Formulario&lt;/h1>
+        &lt;hr>
+        &lt;div class="row mb-3 g-3"> 
+      
+          &lt;div class="col-7">
+            &lt;label for="logradouro" class="form-label">Logradouro&lt;/label>
+            &lt;input type="text" id="logradouro" class="form-control" placeholder="gutter g-3 é o espaçamento entre os campos">
+          &lt;/div>
+          &lt;div class="col-2">
+            &lt;label for="numero" class="form-label">Numero&lt;/label>
+            &lt;input type="text" id="numero" class="form-control">
+          &lt;/div>
+          &lt;div class="col-3">
+            &lt;label for="comlemento" class="form-label">Comlemento&lt;/label>
+            &lt;input type="text" id="comlemento" class="form-control">
+          &lt;/div>
+          &lt;div class="col-6">
+            &lt;label for="bairro" class="form-label">Bairro&lt;/label>
+            &lt;input type="text" id="bairro" class="form-control">
+          &lt;/div>
+          &lt;div class="col-6">
+            &lt;label for="cidade" class="form-label">Cidade&lt;/label>
+            &lt;input type="text" id="cidade" class="form-control">
+          &lt;/div>
+          &lt;div class="col-6">
+            &lt;label for="estado" class="form-label">Estado&lt;/label>
+            &lt;input type="text" id="estado" class="form-control">
+          &lt;/div>
+          &lt;div class="col-2">
+            &lt;label for="cep" class="form-label">Cep&lt;/label>
+            &lt;input type="text" id="cep" class="form-control">
+          &lt;/div>
+          
+        &lt;/div>
+        &lt;button class="btn btn-primary">Cadastrar&lt;/button>
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

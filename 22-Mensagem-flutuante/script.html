@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT Mensagem Flutuante</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">22-Mensagem flutuante</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        
+        &lt;script src="toast.js" defer>&lt;/script>
+
+        &lt;div class="container p-5 my-5">
+              
+          &lt;div class="toast mb-5">
+            &lt;div class="toast-header">
+              &lt;i class="bi-info-circle me-1">&lt;/i>
+              &lt;strong class="me-auto">Informação&lt;/strong>
+              &lt;button class="btn-close" data-bs-dismiss="toast">&lt;/button>
+            &lt;/div>
+            &lt;div class="toast-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro veniam hic cumque esse earum natus nostrum velit odit sed?
+            &lt;/div>
+          &lt;/div>
+        
+          &lt;div class="toast mb-5" data-bs-delay="1000">
+             &lt;div class="toast-body">
+              Chegaram novas mensagens em sua caixa postal
+              &lt;div class="mt-2 border-top">
+                &lt;button class="btn btn-primary">Vizualizar&lt;/button>
+                &lt;button class="btn btn-danger" data-bs-dismiss="toast">Ignorar&lt;/button>
+              &lt;/div>
+             &lt;/div>
+          &lt;/div>
+        
+          &lt;button class="btn btn-primary d-block my-2" data-bs-toggle="tooltip" data-bs-title="Botão que faz &lt;b>cadastros&lt;/b> diversos" data-bs-html="true" data-bs-placement="right">Cadastrar&lt;/button>
+          
+          &lt;button class="btn btn-success d-block my-2" data-bs-toggle="popover" data-bs-title="titulo" data-bs-content="Botão que faz &lt;b>cadastros&lt;/b> diversos" data-bs-html="true" data-bs-placement="right">Cadastrar&lt;/button>
+        
+          &lt;button id="btnToast" class="btn btn-primary">Criar toast&lt;/button>
+          &lt;div id="toastContainer" class="toast-container top-0 end-0 p-3">&lt;/div>
+          
+          &lt;div id="toast-exemplo" class="toast">
+            &lt;div class="toast-header">
+              &lt;i class="bi-info-circle me-1">&lt;/i>
+              &lt;strong class="me-auto">Informação&lt;/strong>
+              &lt;button class="btn-close" data-bs-dismiss="toast">&lt;/button>
+            &lt;/div>
+            &lt;div class="toast-body">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur porro veniam hic cumque esse earum natus nostrum velit odit sed?
+            &lt;/div>
+          &lt;/div>
+        
+        &lt;/div>
+
+      </code>
+    </pre>
+</body>
+
+</html>

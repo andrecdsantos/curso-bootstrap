@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 07-Tabelas</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">07-Tabelas</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;h3>tabela 1&lt;/h3>
+        &lt;div class="container">
+          &lt;table class="table table-striped table-bordered caption-top ">
+            &lt;caption class="text-center">titulo da tabela&lt;/caption>
+            &lt;thead class="table-dark">
+              &lt;tr>
+                &lt;th>Coluna 1&lt;/th>
+                &lt;th>Coluna 2&lt;/th>
+                &lt;th>Coluna 3&lt;/th>
+                &lt;th>Coluna 4&lt;/th>
+              &lt;/tr>
+          &lt;/thead>
+            &lt;tbody>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+            &lt;/tbody>
+          &lt;/table>
+        &lt;/div>
+    
+    
+        &lt;h3>tabela 2&lt;/h3>
+        &lt;div class="container">
+          &lt;table class="table table-warning table-hover">
+            &lt;thead class="table-danger">
+              &lt;tr>
+                &lt;th>Coluna 1&lt;/th>
+                &lt;th>Coluna 2&lt;/th>
+                &lt;th>Coluna 3&lt;/th>
+                &lt;th>Coluna 4&lt;/th>
+              &lt;/tr>
+          &lt;/thead>
+            &lt;tbody>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr class="table-active">
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+            &lt;/tbody>
+            &lt;caption>titulo da tabela&lt;/caption>
+          &lt;/table>
+        &lt;/div>
+    
+    
+        &lt;h3>tabela 3&lt;/h3>
+        &lt;div class="container">
+          &lt;table class="table table-striped-columns table-sm">
+            &lt;thead>
+              &lt;tr>
+                &lt;th>Coluna 1&lt;/th>
+                &lt;th>Coluna 2&lt;/th>
+                &lt;th>Coluna 3&lt;/th>
+                &lt;th>Coluna 4&lt;/th>
+              &lt;/tr>
+          &lt;/thead>
+            &lt;tbody class="table-group-divider">
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+            &lt;/tbody>
+          &lt;/table>
+        &lt;/div>
+    
+    
+        &lt;h3>tabela 4&lt;/h3>
+        &lt;div class="container">
+          &lt;table class="table table-striped table-bordered align-middle text-center">
+            &lt;thead class="table-dark align-middle">
+              &lt;tr>
+                &lt;th class="col-2">Coluna 1&lt;/th>
+                &lt;th class="col-6">Coluna 2&lt;/th>
+                &lt;th class="col-2">Coluna 3&lt;/th>
+                &lt;th class="col-2">Coluna 4&lt;/th>
+              &lt;/tr>
+          &lt;/thead>
+            &lt;tbody>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fugit blanditiis fuga est eius commodi perferendis voluptatibus, reprehenderit suscipit aperiam accusamus odio sequi et dolores cupiditate dolor autem! Totam dolorum alias nostrum deserunt quaerat deleniti corporis vitae magnam officia. Esse reiciendis minus voluptatibus fugiat nulla hic dolore quae earum doloribus quo!&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+              &lt;tr>
+                &lt;td>Coluna 1&lt;/td>
+                &lt;td>Coluna 2&lt;/td>
+                &lt;td>Coluna 3&lt;/td>
+                &lt;td>Coluna 4&lt;/td>
+              &lt;/tr>
+            &lt;/tbody>
+          &lt;/table>
+        &lt;/div>
+    
+    
+        &lt;h3>tabela 5 com scroll&lt;/h3>
+        &lt;div class="container table-responsive">
+          &lt;table class="table table-warning table-hover ">
+            &lt;tr>
+              &lt;td>Celula 1&lt;/td>
+              &lt;td>Celula 2&lt;/td>
+              &lt;td>Celula 3&lt;/td>
+              &lt;td>Celula 4&lt;/td>
+              &lt;td>Celula 5&lt;/td>
+              &lt;td>Celula 6&lt;/td>
+              &lt;td>Celula 7&lt;/td>
+              &lt;td>Celula 8&lt;/td>
+              &lt;td>Celula 9&lt;/td>
+              &lt;td>Celula 10&lt;/td>
+              &lt;td>Celula 11&lt;/td>
+              &lt;td>Celula 12&lt;/td>
+              &lt;td>Celula 13&lt;/td>
+              &lt;td>Celula 14&lt;/td>
+              &lt;td>Celula 15&lt;/td>
+              &lt;td>Celula 16&lt;/td>
+              &lt;td>Celula 17&lt;/td>
+              &lt;td>Celula 18&lt;/td>
+              &lt;td>Celula 19&lt;/td>
+              &lt;td>Celula 20&lt;/td>
+              &lt;td>Celula 21&lt;/td>
+              &lt;td>Celula 22&lt;/td>
+              &lt;td>Celula 23&lt;/td>
+              &lt;td>Celula 24&lt;/td>
+              &lt;td>Celula 25&lt;/td>
+              &lt;td>Celula 26&lt;/td>
+              &lt;td>Celula 27&lt;/td>
+              &lt;td>Celula 28&lt;/td>
+              &lt;td>Celula 29&lt;/td>
+              &lt;td>Celula 30&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Celula 1&lt;/td>
+              &lt;td>Celula 2&lt;/td>
+              &lt;td>Celula 3&lt;/td>
+              &lt;td>Celula 4&lt;/td>
+              &lt;td>Celula 5&lt;/td>
+              &lt;td>Celula 6&lt;/td>
+              &lt;td>Celula 7&lt;/td>
+              &lt;td>Celula 8&lt;/td>
+              &lt;td>Celula 9&lt;/td>
+              &lt;td>Celula 10&lt;/td>
+              &lt;td>Celula 11&lt;/td>
+              &lt;td>Celula 12&lt;/td>
+              &lt;td>Celula 13&lt;/td>
+              &lt;td>Celula 14&lt;/td>
+              &lt;td>Celula 15&lt;/td>
+              &lt;td>Celula 16&lt;/td>
+              &lt;td>Celula 17&lt;/td>
+              &lt;td>Celula 18&lt;/td>
+              &lt;td>Celula 19&lt;/td>
+              &lt;td>Celula 20&lt;/td>
+              &lt;td>Celula 21&lt;/td>
+              &lt;td>Celula 22&lt;/td>
+              &lt;td>Celula 23&lt;/td>
+              &lt;td>Celula 24&lt;/td>
+              &lt;td>Celula 25&lt;/td>
+              &lt;td>Celula 26&lt;/td>
+              &lt;td>Celula 27&lt;/td>
+              &lt;td>Celula 28&lt;/td>
+              &lt;td>Celula 29&lt;/td>
+              &lt;td>Celula 30&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Celula 1&lt;/td>
+              &lt;td>Celula 2&lt;/td>
+              &lt;td>Celula 3&lt;/td>
+              &lt;td>Celula 4&lt;/td>
+              &lt;td>Celula 5&lt;/td>
+              &lt;td>Celula 6&lt;/td>
+              &lt;td>Celula 7&lt;/td>
+              &lt;td>Celula 8&lt;/td>
+              &lt;td>Celula 9&lt;/td>
+              &lt;td>Celula 10&lt;/td>
+              &lt;td>Celula 11&lt;/td>
+              &lt;td>Celula 12&lt;/td>
+              &lt;td>Celula 13&lt;/td>
+              &lt;td>Celula 14&lt;/td>
+              &lt;td>Celula 15&lt;/td>
+              &lt;td>Celula 16&lt;/td>
+              &lt;td>Celula 17&lt;/td>
+              &lt;td>Celula 18&lt;/td>
+              &lt;td>Celula 19&lt;/td>
+              &lt;td>Celula 20&lt;/td>
+              &lt;td>Celula 21&lt;/td>
+              &lt;td>Celula 22&lt;/td>
+              &lt;td>Celula 23&lt;/td>
+              &lt;td>Celula 24&lt;/td>
+              &lt;td>Celula 25&lt;/td>
+              &lt;td>Celula 26&lt;/td>
+              &lt;td>Celula 27&lt;/td>
+              &lt;td>Celula 28&lt;/td>
+              &lt;td>Celula 29&lt;/td>
+              &lt;td>Celula 30&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Celula 1&lt;/td>
+              &lt;td>Celula 2&lt;/td>
+              &lt;td>Celula 3&lt;/td>
+              &lt;td>Celula 4&lt;/td>
+              &lt;td>Celula 5&lt;/td>
+              &lt;td>Celula 6&lt;/td>
+              &lt;td>Celula 7&lt;/td>
+              &lt;td>Celula 8&lt;/td>
+              &lt;td>Celula 9&lt;/td>
+              &lt;td>Celula 10&lt;/td>
+              &lt;td>Celula 11&lt;/td>
+              &lt;td>Celula 12&lt;/td>
+              &lt;td>Celula 13&lt;/td>
+              &lt;td>Celula 14&lt;/td>
+              &lt;td>Celula 15&lt;/td>
+              &lt;td>Celula 16&lt;/td>
+              &lt;td>Celula 17&lt;/td>
+              &lt;td>Celula 18&lt;/td>
+              &lt;td>Celula 19&lt;/td>
+              &lt;td>Celula 20&lt;/td>
+              &lt;td>Celula 21&lt;/td>
+              &lt;td>Celula 22&lt;/td>
+              &lt;td>Celula 23&lt;/td>
+              &lt;td>Celula 24&lt;/td>
+              &lt;td>Celula 25&lt;/td>
+              &lt;td>Celula 26&lt;/td>
+              &lt;td>Celula 27&lt;/td>
+              &lt;td>Celula 28&lt;/td>
+              &lt;td>Celula 29&lt;/td>
+              &lt;td>Celula 30&lt;/td>
+            &lt;/tr>
+            &lt;tr>
+              &lt;td>Celula 1&lt;/td>
+              &lt;td>Celula 2&lt;/td>
+              &lt;td>Celula 3&lt;/td>
+              &lt;td>Celula 4&lt;/td>
+              &lt;td>Celula 5&lt;/td>
+              &lt;td>Celula 6&lt;/td>
+              &lt;td>Celula 7&lt;/td>
+              &lt;td>Celula 8&lt;/td>
+              &lt;td>Celula 9&lt;/td>
+              &lt;td>Celula 10&lt;/td>
+              &lt;td>Celula 11&lt;/td>
+              &lt;td>Celula 12&lt;/td>
+              &lt;td>Celula 13&lt;/td>
+              &lt;td>Celula 14&lt;/td>
+              &lt;td>Celula 15&lt;/td>
+              &lt;td>Celula 16&lt;/td>
+              &lt;td>Celula 17&lt;/td>
+              &lt;td>Celula 18&lt;/td>
+              &lt;td>Celula 19&lt;/td>
+              &lt;td>Celula 20&lt;/td>
+              &lt;td>Celula 21&lt;/td>
+              &lt;td>Celula 22&lt;/td>
+              &lt;td>Celula 23&lt;/td>
+              &lt;td>Celula 24&lt;/td>
+              &lt;td>Celula 25&lt;/td>
+              &lt;td>Celula 26&lt;/td>
+              &lt;td>Celula 27&lt;/td>
+              &lt;td>Celula 28&lt;/td>
+              &lt;td>Celula 29&lt;/td>
+              &lt;td>Celula 30&lt;/td>
+            &lt;/tr>
+          &lt;/table>
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

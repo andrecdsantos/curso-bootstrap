@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">Menus de Navegação</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container my-5">
+
+        &lt;ul class="nav justify-content-center mb-3">
+          &lt;li class="nav-item"> &lt;!-- li opcional -->
+            &lt;a href="#" class="nav-link active">Link ativo&lt;/a>
+          &lt;/li>
+          &lt;li class="nav-item">
+            &lt;a href="#" class="nav-link">Link2&lt;/a>
+          &lt;/li>
+          &lt;li class="nav-item">
+            &lt;a href="#" class="nav-link">Link3&lt;/a>
+          &lt;/li>
+          &lt;li class="nav-item">
+            &lt;a href="#" class="nav-link disabled">Link desabilitado&lt;/a>
+          &lt;/li>
+        &lt;/ul>
+      
+        &lt;ul class="nav nav-tabs nav-fill mb-3">
+            &lt;a href="#" class="nav-link active">Link ativo&lt;/a>
+            &lt;a href="#" class="nav-link">Link2&lt;/a>
+            &lt;a href="#" class="nav-link">Link3&lt;/a>
+            &lt;a href="#" class="nav-link disabled">Link desabilitado&lt;/a>
+        &lt;/ul>
+      
+        &lt;ul class="nav nav-pills nav-justified mb-3"> &lt;!-- justified elementos com mesma largura -->
+            &lt;a href="#" class="nav-link active">Link ativo&lt;/a>
+            &lt;a href="#" class="nav-link">Link2&lt;/a>
+            &lt;a href="#" class="nav-link">Link3&lt;/a>
+            &lt;a href="#" class="nav-link disabled">Link desabilitado&lt;/a>
+        &lt;/ul>Link4
+      
+        &lt;ul class="nav nav-underline mb-3">
+            &lt;a href="#" class="nav-link active">Link ativo&lt;/a>
+            &lt;a href="#" class="nav-link">Link2&lt;/a>
+            &lt;a href="#" class="nav-link">Link3&lt;/a>
+            &lt;a href="#" class="nav-link disabled">Link desabilitado&lt;/a>
+            &lt;a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button">Submenus&lt;/a>
+            &lt;ul class="dropdown-menu">
+              &lt;li>
+                &lt;a href="#" class="dropdown-item">Submenu 1&lt;/a>
+              &lt;/li>
+              &lt;li>
+                &lt;a href="#" class="dropdown-item">Submenu 2&lt;/a>
+              &lt;/li>
+              &lt;li>
+                &lt;hr class="dropdown-divider">
+              &lt;/li>
+              &lt;li>
+                &lt;a href="#" class="dropdown-item">Submenu 3&lt;/a>
+              &lt;/li>
+            &lt;/ul>
+        &lt;/ul>
+      
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

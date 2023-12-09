@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 05-Tipografia</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">05-Tipografia</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;h1>
+        AUMENTANDO A FONTE DE ELEMENTOS p COM CLASSES DE TITULOS(H1,H2,H3)
+      &lt;/h1>
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;p class="h1">.h1 - Classe de titulo de nivel 1&lt;/p>
+        &lt;p class="h2">.h2 - Classe de titulo de nivel 2&lt;/p>
+        &lt;p class="h3">.h3 - Classe de titulo de nivel 3&lt;/p>
+        &lt;p class="h4">.h4 - Classe de titulo de nivel 4&lt;/p>
+        &lt;p class="h5">.h5 - Classe de titulo de nivel 5&lt;/p>
+        &lt;p class="h6">.h6 - Classe de titulo de nivel 6&lt;/p>
+      &lt;/div>
+      &lt;!-- div.container>h1.display-${Display $}*6 -->
+      &lt;h1>AUMENTANDO A FONTE PADRAO DE H1 COM CLASSES DISPLAY&lt;/h1>
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;h1 class="display-1">Display 1&lt;/h1>
+        &lt;h1 class="display-2">Display 2&lt;/h1>
+        &lt;h1 class="display-3">Display 3&lt;/h1>
+        &lt;h1 class="display-4">Display 4&lt;/h1>
+        &lt;h1 class="display-5">Display 5&lt;/h1>
+        &lt;h1 class="display-6">Display 6&lt;/h1>
+      &lt;/div>
+      &lt;h1>DESTACANDO TRECHO DE TEXTO COM A CLASSE LEAD&lt;/h1>
+      &lt;!-- div.container.bg-primary-subtle.mb-4>p>lorem30 -->
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Sapiente, voluptatem. Quas tenetur minus explicabo accusamus,
+            porro numquam corporis quaerat corrupti.
+        &lt;/p>
+        &lt;p class="lead">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Sapiente, voluptatem. Quas tenetur minus explicabo accusamus,
+            porro numquam corporis quaerat corrupti.
+        &lt;/p>
+      &lt;/div>
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;p>texto mark &lt;mark>marcado&lt;/mark>&lt;/p>
+        &lt;p>texto del &lt;del>excluido&lt;/del>&lt;/p>
+        &lt;p>texto s &lt;s>riscado&lt;/s>&lt;/p>
+        &lt;p>texto ins &lt;ins>recem inserido&lt;/ins>&lt;/p>
+        &lt;p>texto u &lt;u>sublinhado&lt;/u>&lt;/p>
+        &lt;p>texto small &lt;small>pequeno&lt;/small>&lt;/p>
+        &lt;p>texto strong &lt;strong>encorpado&lt;/strong>&lt;/p>
+        &lt;p>texto em &lt;em>italico&lt;/em>&lt;/p>
+      &lt;/div>
+      &lt;h1>ELEMENTO ABBR USADO PARA SIGLAS&lt;/h1>
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;abbr title="Mongo, express, react, node">MERN&lt;/abbr>
+      &lt;/div>
+      &lt;h1>CITACOES USANDO ELEMENTO BLOCKQUOTE E CLASSE BLOCKQUOTE&lt;/h1>
+      &lt;div class="container bg-primary-subtle mb-4">
+        &lt;figure class="text-end">
+          &lt;blockquote class="blockquote">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+              beatae voluptate, aperiam odio perspiciatis voluptatibus
+              exercitationem porro suscipit cum omnis.
+          &lt;/blockquote>
+          &lt;figcaption class="blockquote-footer">
+            &lt;cite>fulano famoso&lt;/cite>, diretor de cinema
+          &lt;/figcaption>
+        &lt;/figure>
+        &lt;p>
+          PARAGRAFRO SEM SER CITACAO Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Sapiente, voluptatem. Quas tenetur minus.
+      &lt;/p>
+      &lt;/div>
+      &lt;h1>LISTAS&lt;/h1>
+      &lt;div class="container bg-primary-subtle bg-4">
+      &lt;ul class="list-unstyled">
+        &lt;li>item 1&lt;/li>
+        &lt;li>item 2&lt;/li>
+        &lt;li>item 3&lt;/li>
+        &lt;li>item 4&lt;/li>
+      &lt;/ul>
+      &lt;ul class="list-inline">
+        &lt;li class="list-inline-item">item 1&lt;/li>
+        &lt;li class="list-inline-item">item 2&lt;/li>
+        &lt;li class="list-inline-item">item 3&lt;/li>
+        &lt;li class="list-inline-item">item 4&lt;/li>
+      &lt;/ul>
+      &lt;/div>
+      &lt;h1>LISTA DE DEFINIÇOES > ELEMENTO DL&lt;/h1>
+      &lt;div class="container bg-primary-subtle bg-4">
+      &lt;!-- dl>(dt{Termo $}+dd{Descriçao do termo $})*4 -->
+      &lt;dl>
+        &lt;dt>Termo 1&lt;/dt>
+        &lt;dd>Descriçao do termo 1&lt;/dd>
+        &lt;dt>Termo 2&lt;/dt>
+        &lt;dd>Descriçao do termo 2&lt;/dd>
+        &lt;dt>Termo 3&lt;/dt>
+        &lt;dd>Descriçao do termo 3&lt;/dd>
+        &lt;dt>Termo 4&lt;/dt>
+        &lt;dd>Descriçao do termo 4&lt;/dd>
+      &lt;/dl>
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

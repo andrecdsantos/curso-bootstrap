@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 19-Cards</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+  <h1 style="text-align: center;">19-Cards</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container">
+          teste
+        &lt;/div&gt;
+
+        &lt;div class="container py-5">
+          &lt;h2>Card horizontal&lt;/h2>
+          &lt;div class="card col-8 mb-3">
+            &lt;div class="row g-0">
+              &lt;div class="col-4">
+                &lt;img src="https://picsum.photos/id/34/300" class="img-fluid rounded-start w-100">
+              &lt;/div>
+              &lt;div class="col-8">
+                &lt;div class="card-body">
+                  &lt;h5 class="card-title">Titulo&lt;/h5>
+                  &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                  &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                  Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                   eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                  &lt;a href="#" class="card-link">Link 1&lt;/a>
+                  &lt;a href="#" class="card-link">Link 2&lt;/a>
+                  &lt;a href="#" class="card-link">Link 3&lt;/a>
+                &lt;/div>
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+    
+          &lt;h2>Card vertical basico&lt;/h2>
+          &lt;div class="row mb-5">
+            &lt;div class="card col-4">
+              &lt;img src="https://picsum.photos/id/4/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;img src="https://picsum.photos/id/9/300" class="card-img-bottom">
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+          &lt;/div>
+    
+    
+          &lt;h2>Card group numero indefinido&lt;/h2>
+          &lt;div class="card-group mb-5">
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/76/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+      
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/77/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+      
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/78/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+          &lt;/div>
+    
+    
+          &lt;h2>Card usando row com numero definido de colunas por linha, resp&lt;/h2>
+          &lt;div class="row row-cols-1 row-cols-md-2 g-3">
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/76/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Caso tenhe problema de alinhamento dos cards quando um ficar maior que o outro adicionar a classe h-100 na div do card&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+      
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/77/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+      
+            &lt;div class="card">
+              &lt;img src="https://picsum.photos/id/78/300" class="card-img-top">
+              &lt;h4 class="card-header">Titulo imagem&lt;/h4>
+              &lt;div class="card-body">
+                &lt;h5 class="card-title">Titulo&lt;/h5>
+                &lt;h6 class="card-subtitle">Subtitulo&lt;/h6>
+                &lt;p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, voluptate quae! 
+                Dolorum nisi, et officia at obcaecati beatae architecto dolorem numquam ipsa. Dolor rerum aperiam laudantium
+                 eaque delectus, provident rem sit, hic eum quaerat illo, quas maiores non quo error.&lt;/p>
+                &lt;a href="#" class="card-link">Link 1&lt;/a>
+                &lt;a href="#" class="card-link">Link 2&lt;/a>
+                &lt;a href="#" class="card-link">Link 3&lt;/a>
+              &lt;/div>
+              &lt;div class="card-footer">Rodapé&lt;/div>
+            &lt;/div>
+          &lt;/div>
+    
+          
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

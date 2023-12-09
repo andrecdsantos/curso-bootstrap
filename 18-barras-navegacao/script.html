@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 18-Barras de Navegação</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">18-Barras de Navegação</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container">
+          teste
+        &lt;/div&gt;
+
+        &lt;nav class="navbar bg-danger-subtle sticky-top navbar-expand-sm mb-3">
+          &lt;div class="container-fluid">
+            &lt;a href="#" class="navbar-brand d-flex align-items-center">
+              &lt;i class="bi-bootstrap-fill fs-1 me-2">&lt;/i>
+              Bootstrap 5
+            &lt;/a>
+            &lt;button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavbar">
+              &lt;span class="navbar-toggler-icon">&lt;/span>
+            &lt;/button>
+            &lt;div class="collapse navbar-collapse" id="menuNavbar">
+              &lt;div class="navbar-nav">
+                &lt;a href="#" class="nav-link active">Principal&lt;/a>
+                &lt;div class="dropdown">
+                  &lt;a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Produtos&lt;/a>
+                  &lt;ul class="dropdown-menu bg-danger-subtle dropdown-menu-end">
+                    &lt;li>
+                      &lt;a href="#" class="dropdown-item">Produto 1&lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                      &lt;a href="#" class="dropdown-item">Produto 2&lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                      &lt;a href="#" class="dropdown-item">Produto 3&lt;/a>
+                    &lt;/li>
+                    &lt;li>
+                      &lt;a href="#" class="dropdown-item">Produto 4&lt;/a>
+                    &lt;/li>
+                  &lt;/ul>
+                &lt;/div>
+                &lt;a href="#" class="nav-link">Contato&lt;/a>
+                &lt;a href="#" class="nav-link disabled">Sobre&lt;/a>
+              &lt;/div>
+            &lt;/div>
+            &lt;form action="" class="d-flex">
+              &lt;div class="input-group">
+                &lt;input type="search" class="form-control me-2" placeholder="Buscar...">
+                &lt;button class="btn btn-outline-primary">Buscar&lt;/button>
+              &lt;/div>
+            &lt;/form>
+          &lt;/div>
+        &lt;/nav>
+    
+        &lt;p>ocupar toda a pagina&lt;/p>
+    
+        &lt;nav class="navbar bg-dark navbar-dark sticky-bottom">&lt;!-- contraste de cor -->
+          &lt;div class="container-fluid">
+            &lt;a href="#" class="navbar-brand d-flex align-items-center">
+              &lt;i class="bi-bootstrap-fill fs-1 me-2">&lt;/i>
+              Bootstrap 5
+            &lt;/a>
+            &lt;span class="navbar-text me-auto">Curso Completo&lt;/span>
+          &lt;/div>
+        &lt;/nav>
+      </code>
+    </pre>
+</body>
+
+</html>

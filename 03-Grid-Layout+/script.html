@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 03-Grid Layout</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">03-Grid Layout</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;h2>DIVIDIDO EM 12 COLUNAS&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row">
+            &lt;div class="col-3 bg-dark h400 bg-opacity-50">&lt;/div>
+            &lt;div class="col-6 bg-dark h400 bg-opacity-75">&lt;/div>
+            &lt;div class="col-3 bg-dark h400 bg-opacity-50">&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>USANDO APENAS COL PEGA O RESTANTE DO ESPAÇO DISPONIVEL E DIVIDE ENTRE OS FILHOS&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row">
+            &lt;div class="col bg-dark h400 bg-opacity-50">&lt;/div>
+            &lt;div class="col-9 bg-dark h400 bg-opacity-75">&lt;/div>
+            &lt;div class="col bg-dark h400 bg-opacity-50">&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>DEFININDO LAYOUT PADRAO WEB&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row">
+            &lt;div class="col-12 bg-dark h100 bg-opacity-50">&lt;/div>
+            &lt;div class="col-12 col-sm-9 bg-dark h400 bg-opacity-25">&lt;/div>
+            &lt;div class="col-12 col-sm-3 bg-dark h400 bg-opacity-75">&lt;/div>
+            &lt;div class="col-12 bg-dark h100 bg-opacity-50">&lt;/div>
+          &lt;/div>
+        &lt;/div>
+        &lt;h2>EXEMPLO 2 LINHAS COM COLUNAS IGUAIS&lt;/h2>
+        &lt;div class="container">
+          &lt;div class="row">
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-75">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-75">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+          &lt;/div>
+          &lt;div class="row">
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-75">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-25">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-75">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-25">&lt;/div>
+            &lt;div class="col bg-dark h100 bg-opacity-50">&lt;/div>
+          &lt;/div>
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

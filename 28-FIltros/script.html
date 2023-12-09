@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 28 - Filtros</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">28 - Filtros</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container">
+        &lt;div class="row">
+            &lt;div class="col-md-12">
+                &lt;h3 class="text-center">Conheça nossos projetos&lt;/h3>
+            &lt;/div>
+            &lt;div class="p-3">&lt;/div>
+            &lt;div class="col-md-12 d-flex align-items-center column-gap-3" id="filter-btn-box">
+                &lt;button class="main-btn filter-btn active col-8 col-md-3" id="all-btn">Todos&lt;/button>
+                &lt;button class="main-btn filter-btn col-8 col-md-3" id="dev-btn">Desenvolvimento&lt;/button>
+                &lt;button class="main-btn filter-btn col-8 col-md-3" id="dsg-btn">Design&lt;/button>
+                &lt;button class="main-btn filter-btn col-8 col-md-3" id="seo-btn">SEO&lt;/button>
+            &lt;/div>
+            &lt;div class="col-md-4 project-box dev">
+                &lt;img src="../img/proj1.jpg" class="img-fluid">
+            &lt;/div>
+            &lt;div class="col-md-4 project-box dsg">
+                &lt;img src="../img/proj2.jpg" class="img-fluid">
+            &lt;/div>
+            &lt;div class="col-md-4 project-box seo">
+                &lt;img src="../img/proj3.jpg" class="img-fluid">
+            &lt;/div>
+            &lt;div class="col-md-4 project-box dev">
+                &lt;img src="../img/proj4.jpg" class="img-fluid">
+            &lt;/div>
+            &lt;div class="col-md-4 project-box dsg">
+                &lt;img src="../img/proj5.jpg" class="img-fluid">
+            &lt;/div>
+            &lt;div class="col-md-4 project-box dev">
+                &lt;img src="../img/proj6.jpg" class="img-fluid">
+            &lt;/div>
+        &lt;/div>
+      &lt;/div>
+      </code>
+    </pre>
+
+
+    <h1 style="text-align: center;">SCRIPT</h1>
+    <pre class="my-3 language-javascript line-numbers">
+      <code>
+        document.addEventListener('DOMContentLoaded', function () {
+          let filterBtns = document.querySelectorAll('.filter-btn');
+                    let projectBoxes = document.querySelectorAll('.project-box');
+
+                    filterBtns.forEach(function (filterBtn) {
+                        filterBtn.addEventListener('click', function () {
+                            // Remova a classe 'active' de todos os botões
+                            filterBtns.forEach(function (btn) {
+                                btn.classList.remove('active');
+                            });
+
+                            // Adicione a classe 'active' apenas ao botão clicado
+                            filterBtn.classList.add('active');
+
+                            // Obtém a categoria do botão clicado
+                            let category = filterBtn.id.replace('-btn', '');
+
+                            // Oculta os projetos
+                            projectBoxes.forEach(function (projectBox) {
+                                projectBox.style.opacity = 0;
+                                projectBox.style.display = 'none';
+                            });
+
+                            // Mostra ou oculta os projetos com base na categoria
+                            projectBoxes.forEach(function (projectBox) {
+                                if (category === 'all' || projectBox.classList.contains(category)) {
+                                    // Mostra os projetos
+                                    projectBox.style.display = 'block';
+
+                                    // Adiciona um pequeno atraso para garantir que a transição seja aplicada corretamente
+                                    setTimeout(() => {
+                                        projectBox.style.opacity = 1;
+                                    }, 50);
+                                }else {
+                                    
+                                }
+                            });
+
+
+                            
+                            TRANSICAO AO REMOVER IMAGENS
+                            projectBoxes.forEach(function (projectBox) {
+                                projectBoxes.forEach(function (projectBox) {
+                                if (category === 'all' || projectBox.classList.contains(category)) {
+                                    // Mostra os projetos
+                                    projectBox.style.display = 'block';
+
+                                    // Adiciona um pequeno atraso para garantir que a transição seja aplicada corretamente
+                                    setTimeout(() => {
+                                        projectBox.style.opacity = 1;
+                                    }, 50);
+                                } else {
+                                    // Oculta os projetos com uma transição suave
+                                    projectBox.style.opacity = 0;
+
+                                    // Adiciona um pequeno atraso antes de esconder os projetos
+                                    setTimeout(() => {
+                                        projectBox.style.display = 'none';
+                                    }, 00);
+                                }
+                            });
+                            });
+
+
+                        });
+                    });
+                });
+      </code>
+    </pre>
+</body>
+
+</html>

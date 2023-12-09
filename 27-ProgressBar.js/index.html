@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/559ba7eecd.js" crossorigin="anonymous" defer></script> <!-- FA -->
+    <script src="../progressbar.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <title>27-ProgressBar.js</title>
+    <style>
+        .circle-box div{
+            padding: 0 40px;
+        }
+        .progressbar-text{
+            font-weight: bold;
+            font-size: 32px;
+        }
+        #data-area p {
+            color: #fff;
+            text-align: center;
+            font-size: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-success" style="height: 200vh;"> 
+        <h1 class="text-center">27 - ProgressBar.js </h1>
+    </div>
+    <div id="data-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 circle-box">
+                    <div id="circleA">
+                        <p>Projetos entregues</p>
+                    </div>
+                </div>
+                <div class="col-md-3 circle-box">
+                    <div id="circleB">
+                        <p>Clietes felizes</p>
+                    </div>
+                </div>
+                <div class="col-md-3 circle-box">
+                    <div id="circleC">
+                        <p>Colaboradores</p>
+                    </div>
+                </div>
+                <div class="col-md-3 circle-box">
+                    <div id="circleD">
+                        <p>Cafézinhos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    let containerA = document.querySelector('#circleA');
+    let circleA = new ProgressBar.Circle(containerA, {
+        color: '#64DAF9',
+        strokeWidth: 8,
+        duration: 1400,
+        from: { color: '#AAA'},
+        to: { color: '#65DAF9'},
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            let value = Math.round(circle.value() * 60);
+
+            circle.setText(value);
+        }
+    });
+
+    let containerB = document.querySelector('#circleB');
+    let containerC = document.querySelector('#circleC');
+    let containerD = document.querySelector('#circleD');
+
+    let circleB = new ProgressBar.Circle(containerB, {
+        color: '#64DAF9',
+        strokeWidth: 8,
+        duration: 1600,
+        from: { color: '#AAA'},
+        to: { color: '#65DAF9'},
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            let value = Math.round(circle.value() * 254);
+
+            circle.setText(value);
+        }
+    });
+
+    let circleC = new ProgressBar.Circle(containerC, {
+        color: '#64DAF9',
+        strokeWidth: 8,
+        duration: 2000,
+        from: { color: '#AAA'},
+        to: { color: '#65DAF9'},
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            let value = Math.round(circle.value() * 32);
+
+            circle.setText(value);
+        }
+    });
+
+    let circleD = new ProgressBar.Circle(containerD, {
+        color: '#64DAF9',
+        strokeWidth: 8,
+        duration: 2200,
+        from: { color: '#AAA'},
+        to: { color: '#65DAF9'},
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            let value = Math.round(circle.value() * 5243);
+
+            circle.setText(value);
+        }
+    });
+
+    // Iniciando a animação quando chega no elemento
+    let dataAreaOffsetTop = document.querySelector('#data-area').offsetTop;
+    let stop = 0;
+
+    window.addEventListener('scroll', function() {
+        let scroll = window.scrollY;
+        if (scroll > (dataAreaOffsetTop - 500) && stop === 0) {
+            circleA.animate(1.0);
+            circleB.animate(1.0);
+            circleC.animate(1.0);
+            circleD.animate(1.0);
+
+            stop = 1;
+        }
+    });
+});
+    </script>
+</body>
+</html>

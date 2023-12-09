@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 13-Position</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">13-Position</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="text-bg-primary p-4 mt-5">esta por baixo da div preta&lt;/div>
+        &lt;div class="text-bg-warning p-4 fixed-bottom">fixed-bottom&lt;/div>
+        &lt;div class="text-bg-dark p-4 fixed-top">fixed-top&lt;/div>
+        &lt;div class="container bg-danger m-5 p-3 position-relative">
+          &lt;div class="p-3 bg-primary">div1&lt;/div>
+          &lt;div class="p-3 bg-secondary position-absolute z-2 top-0 start-50">position-absolute z-2 z-2 top-0 start-50&lt;/div>
+          &lt;div class="p-3 bg-info position-relative">div3 start-50 fez o elemento começar do meio da pagina&lt;/div>
+        &lt;/div>
+        &lt;div class="container bg-danger m-5 p-3 vstack gap-3">
+          &lt;div class="p-3 bg-primary">adicionando vstack = flex-row para poder usar gap&lt;/div>
+          &lt;div class="p-3 bg-secondary">gap-3 no pai&lt;/div>
+          &lt;div class="p-3 bg-info">&lt;/div>
+        &lt;/div>
+        &lt;div class="container bg-danger m-5 p-3 hstack gap-3">
+          &lt;div class="p-3 bg-primary">adicionando hstack = flex para poder usar gap&lt;/div>
+          &lt;div class="p-3 bg-secondary">gap-3 no pai&lt;/div>
+          &lt;div class="p-3 bg-info">teste&lt;/div>
+        &lt;/div>
+          &lt;p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur .Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque 
+          &lt;/p> 
+            
+            &lt;div class="text-bg-success p-5 sticky-bottom sticky-top">
+              sticky-bottom e sticky-top
+            &lt;/div>
+          &lt;p class="lead">
+            asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur .Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae similique sint aperiam. Harum atque asperiores fugit, eum obcaecati adipisci incidunt aut, repudiandae doloribus, iure suscipit. Est amet iure, dolorem quae incidunt in dolor eveniet aspernatur deserunt at, sed a inventore quis tempora soluta? Repellat repudiandae animi soluta nostrum sequi dolorum itaque explicabo, fuga error eos, recusandae aperiam illo consectetur ratione cum maiores exercitationem incidunt saepe vel reprehenderit expedita odio iusto inventore ad. Facilis inventore modi, libero mollitia suscipit, fuga perferendis nobis dignissimos, non enim quia error aperiam quos! Placeat iusto culpa doloribus dolor rerum, provident similique quam impedit tempore ullam nesciunt quae aliquid aliquam, vel quibusdam? Voluptatem minus harum pariatur sit corrupti voluptates deserunt similique sed, saepe ut est qui numquam excepturi quasi consequatur repellat animi id nulla veniam temporibus. Animi aspernatur placeat excepturi praesentium laudantium quo in, fugiat soluta, deleniti tenetur hic, repellat error! Minus et quibusdam, aut deserunt sit, eum, porro at architecto voluptate facilis quos doloribus dolorem repudiandae culpa aperiam veritatis. Error dicta ullam nisi, pariatur optio delectus veniam consectetur enim accusantium, cum accusamus eos neque quas debitis voluptatum laudantium id culpa necessitatibus quis dignissimos. Veritatis eos voluptatum quas accusantium, obcaecati quo sunt illum officia velit molestiae rem dolorem doloremque aliquid assumenda asperiores. Nulla, sit ipsam voluptas libero quia quasi ipsa tempora quo neque repellendus nostrum praesentium velit enim fugit iusto ex quibusdam non tenetur repudiandae tempore. Praesentium sit, perferendis dolorem consectetur ipsam error nemo a eaque qui placeat. A unde odio magni eligendi beatae pariatur libero corrupti voluptatum nobis sed aliquam eum deleniti dignissimos, ex velit soluta sapiente rerum maxime distinctio accusantium. USANDO INVISIBLE para mostrar o elemento de cima e ele n ficar por debaixo do fixed  FIM DO TEXTO.&lt;/p>
+          &lt;div class="text-bg-warning p-4 invisible">
+            usando tecnica invisible para mostrar o elemento de cima e ele n ficar por debaixo do fixed
+          &lt;/div>
+          &lt;div class="text-bg-warning p-4 fixed-bottom">fixed-bottom&lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

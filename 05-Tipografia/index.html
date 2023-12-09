@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+            defer
+        ></script>
+        <link rel="stylesheet" href="./style.css" />
+        <style></style>
+        <title>05-Tipografia</title>
+    </head>
+
+    <body>
+        <h1 style="text-align: center;">05-Tipografia</h1>
+        <h1>
+            AUMENTANDO A FONTE DE ELEMENTOS p COM CLASSES DE TITULOS(H1,H2,H3)
+        </h1>
+        <div class="container bg-primary-subtle mb-4">
+            <p class="h1">.h1 - Classe de titulo de nivel 1</p>
+            <p class="h2">.h2 - Classe de titulo de nivel 2</p>
+            <p class="h3">.h3 - Classe de titulo de nivel 3</p>
+            <p class="h4">.h4 - Classe de titulo de nivel 4</p>
+            <p class="h5">.h5 - Classe de titulo de nivel 5</p>
+            <p class="h6">.h6 - Classe de titulo de nivel 6</p>
+        </div>
+        <!-- div.container>h1.display-${Display $}*6 -->
+        <h1>AUMENTANDO A FONTE PADRAO DE H1 COM CLASSES DISPLAY</h1>
+        <div class="container bg-primary-subtle mb-4">
+            <h1 class="display-1">Display 1</h1>
+            <h1 class="display-2">Display 2</h1>
+            <h1 class="display-3">Display 3</h1>
+            <h1 class="display-4">Display 4</h1>
+            <h1 class="display-5">Display 5</h1>
+            <h1 class="display-6">Display 6</h1>
+        </div>
+        <h1>DESTACANDO TRECHO DE TEXTO COM A CLASSE LEAD</h1>
+        <!-- div.container.bg-primary-subtle.mb-4>p>lorem30 -->
+        <div class="container bg-primary-subtle mb-4">
+            <p>
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sapiente, voluptatem. Quas tenetur minus explicabo accusamus,
+                porro numquam corporis quaerat corrupti.
+            </p>
+            <p class="lead">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                Sapiente, voluptatem. Quas tenetur minus explicabo accusamus,
+                porro numquam corporis quaerat corrupti.
+            </p>
+        </div>
+        <div class="container bg-primary-subtle mb-4">
+            <p>texto mark <mark>marcado</mark></p>
+            <p>texto del <del>excluido</del></p>
+            <p>texto s <s>riscado</s></p>
+            <p>texto ins <ins>recem inserido</ins></p>
+            <p>texto u <u>sublinhado</u></p>
+            <p>texto small <small>pequeno</small></p>
+            <p>texto strong <strong>encorpado</strong></p>
+            <p>texto em <em>italico</em></p>
+        </div>
+        <h1>ELEMENTO ABBR USADO PARA SIGLAS</h1>
+        <div class="container bg-primary-subtle mb-4">
+            <abbr title="Mongo, express, react, node">MERN</abbr>
+        </div>
+        <h1>CITACOES USANDO ELEMENTO BLOCKQUOTE E CLASSE BLOCKQUOTE</h1>
+        <div class="container bg-primary-subtle mb-4">
+            <figure class="text-end">
+              <blockquote class="blockquote">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui
+                  beatae voluptate, aperiam odio perspiciatis voluptatibus
+                  exercitationem porro suscipit cum omnis.
+              </blockquote>
+              <figcaption class="blockquote-footer">
+                <cite>fulano famoso</cite>, diretor de cinema
+              </figcaption>
+            </figure>
+            <p>
+              PARAGRAFRO SEM SER CITACAO Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+              Sapiente, voluptatem. Quas tenetur minus.
+          </p>
+        </div>
+        <h1>LISTAS</h1>
+        <div class="container bg-primary-subtle bg-4">
+          <ul class="list-unstyled">
+            <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li>
+          </ul>
+          <ul class="list-inline">
+            <li class="list-inline-item">item 1</li>
+            <li class="list-inline-item">item 2</li>
+            <li class="list-inline-item">item 3</li>
+            <li class="list-inline-item">item 4</li>
+          </ul>
+        </div>
+        <h1>LISTA DE DEFINIÇOES > ELEMENTO DL</h1>
+        <div class="container bg-primary-subtle bg-4">
+          <!-- dl>(dt{Termo $}+dd{Descriçao do termo $})*4 -->
+          <dl>
+            <dt>Termo 1</dt>
+            <dd>Descriçao do termo 1</dd>
+            <dt>Termo 2</dt>
+            <dd>Descriçao do termo 2</dd>
+            <dt>Termo 3</dt>
+            <dd>Descriçao do termo 3</dd>
+            <dt>Termo 4</dt>
+            <dd>Descriçao do termo 4</dd>
+          </dl>
+        </div>
+        <script src="./app.js" type="module"></script>
+    </body>
+</html>

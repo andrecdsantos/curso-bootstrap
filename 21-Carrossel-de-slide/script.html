@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT Carrossel de slides</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">21-Carrossel de slides</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container py-5">
+
+        &lt;div class="carousel carousel-fade carousel-dark mb-5" data-bs-ride="carousel" data-bs-touch="false">
+          &lt;div class="carousel-inner">
+            &lt;div class="carousel-item active" data-bs-interval="1500ms">
+              &lt;img src="https://picsum.photos/id/53/1280/420" class="d-block w-100">
+            &lt;/div>
+            &lt;div class="carousel-item" data-bs-interval="1500ms">
+              &lt;img src="https://picsum.photos/id/28/1280/420" class="d-block w-100">
+              &lt;div class="carousel-caption d-none d-md-block">
+                &lt;h5>Titulo do slide&lt;/h5>
+                &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatem nobis facilis quae inventore adipisci eaque eligendi laudantium cupiditate voluptas ab, error odit, nemo quis modi optio quaerat! Sequi, necessitatibus.&lt;/p>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="carousel-item" data-bs-interval="1500ms">
+              &lt;img src="https://picsum.photos/id/33/1280/420" class="d-block w-100">
+            &lt;/div>
+          &lt;/div>
+        &lt;/div>
+        
+        &lt;div id="capa" class="carousel slide carousel-fade" data-bs-ride="carousel">
+          &lt;div class="carousel-inner">        
+            &lt;div class="carousel-item active">
+              &lt;img src="https://picsum.photos/id/63/1280/420" class="d-block w-100">
+              &lt;div class="carousel-caption d-none d-md-block">
+                &lt;h5>Titulo do slide&lt;/h5>
+                &lt;p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatem nobis facilis quae inventore adipisci eaque eligendi laudantium cupiditate voluptas ab, error odit, nemo quis modi optio quaerat! Sequi, necessitatibus.&lt;/p>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="carousel-item">
+              &lt;img src="https://picsum.photos/id/8/1280/420" class="d-block w-100">
+            &lt;/div>
+            &lt;div class="carousel-item">
+              &lt;img src="https://picsum.photos/id/3/1280/420" class="d-block w-100">
+            &lt;/div>
+          &lt;/div>
+          &lt;button class="carousel-control-prev" data-bs-target="#capa" data-bs-slide="prev">
+            &lt;span class="carousel-control-prev-icon">&lt;/span>
+          &lt;/button>
+          &lt;button class="carousel-control-next" data-bs-target="#capa" data-bs-slide="next">
+            &lt;span class="carousel-control-next-icon">&lt;/span>
+          &lt;/button>
+          &lt;div class="carousel-indicators">
+            &lt;button class="active" data-bs-target="#capa" data-bs-slide-to="0">&lt;/button>
+            &lt;button data-bs-target="#capa" data-bs-slide-to="1">&lt;/button>
+            &lt;button data-bs-target="#capa" data-bs-slide-to="2">&lt;/button>
+          &lt;/div>
+        &lt;/div>
+        
+        &lt;/div>       
+      </code>
+    </pre>
+</body>
+
+</html>

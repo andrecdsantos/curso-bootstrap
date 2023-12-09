@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>21-Carrossel de slides</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+</head>
+
+<body class="bg-primary-subtle">
+    <div class="container py-5">
+
+      <h1 class="text-center">21-Carrossel de Slides</h1>
+      <div class="carousel carousel-fade carousel-dark mb-5" data-bs-ride="carousel" data-bs-touch="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="1500ms">
+            <img src="https://picsum.photos/id/53/1280/420" class="d-block w-100">
+          </div>
+          <div class="carousel-item" data-bs-interval="1500ms">
+            <img src="https://picsum.photos/id/28/1280/420" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Titulo do slide</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatem nobis facilis quae inventore adipisci eaque eligendi laudantium cupiditate voluptas ab, error odit, nemo quis modi optio quaerat! Sequi, necessitatibus.</p>
+            </div>
+          </div>
+          <div class="carousel-item" data-bs-interval="1500ms">
+            <img src="https://picsum.photos/id/33/1280/420" class="d-block w-100">
+          </div>
+        </div>
+      </div>
+
+      <div id="capa" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">        
+          <div class="carousel-item active">
+            <img src="https://picsum.photos/id/63/1280/420" class="d-block w-100">
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Titulo do slide</h5>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae voluptatem nobis facilis quae inventore adipisci eaque eligendi laudantium cupiditate voluptas ab, error odit, nemo quis modi optio quaerat! Sequi, necessitatibus.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/8/1280/420" class="d-block w-100">
+          </div>
+          <div class="carousel-item">
+            <img src="https://picsum.photos/id/3/1280/420" class="d-block w-100">
+          </div>
+        </div>
+        <button class="carousel-control-prev" data-bs-target="#capa" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" data-bs-target="#capa" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+        <div class="carousel-indicators">
+          <button class="active" data-bs-target="#capa" data-bs-slide-to="0"></button>
+          <button data-bs-target="#capa" data-bs-slide-to="1"></button>
+          <button data-bs-target="#capa" data-bs-slide-to="2"></button>
+        </div>
+      </div>
+
+      <pre>
+        <p class="my-5 text-bg-dark">
+data-bs-ride="carousel" (Padrão):
+Ativa o carrossel e permite a navegação automática.
+
+data-bs-ride="false":
+Desativa o carrossel automático. Os usuários precisarão navegar manualmente pelos slides.
+
+data-bs-ride="hover":
+Ativa o carrossel automaticamente quando o mouse está sobre ele e pausa quando o mouse é retirado.
+
+data-bs-ride="click":
+Ativa o carrossel automaticamente quando o slide é clicado e pausa quando o mouse é retirado.
+        </p>
+        <p class="my-5 text-bg-dark">
+          
+        </p>
+      </pre>
+
+    </div>
+
+</body>
+
+</html>

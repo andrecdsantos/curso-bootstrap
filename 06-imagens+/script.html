@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 06-imagens</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">06-imagens</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;h2>CLASSE IMG-FLUID PARA IMAGEM NAO ESTOURAR O TAMANHO MAX DA TELA&lt;/h2>
+        &lt;div class="container">
+          &lt;img src="original.png" class="img-fluid">
+        &lt;/div>
+        &lt;div class="container">
+          &lt;h3>img-thumbnail e rounded(border-radius)&lt;/h3>
+          &lt;img src="original.png" class="img-fluid img-thumbnail rounded">
+        &lt;/div>
+        &lt;div class="container">
+          &lt;h3>posicionando img a esquerda usando float left&lt;/h3>
+          &lt;img src="original.png" class="float-start me-3" width="150px" height="150px">
+          &lt;p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum, doloremque cupiditate? Provident nemo cum velit consectetur ipsum sint deleniti voluptatem enim distinctio aliquam reiciendis optio fugit eaque placeat eligendi iure cumque beatae est debitis omnis, blanditiis natus voluptates! Similique ullam a dolore voluptate inventore numquam incidunt iusto harum iste eligendi eius debitis nesciunt vitae magnam totam voluptates, at libero? Facere qui, fugiat assumenda quaerat mollitia culpa doloremque vitae velit numquam ipsa dicta atque excepturi officia molestias obcaecati possimus labore id voluptatibus in quod nihil incidunt aspernatur illo beatae. Vero facere natus sed ab. Aliquid commodi quisquam impedit sed eaque mollitia excepturi officia molestias obcaecati possimus labore id voluptatibus in quod nihil incidunt aspernatur illo beatae. Vero facere natus sed ab. Aliquid commodi quisquam impedit sed eaque mollitia..&lt;/p>
+        &lt;/div>
+        &lt;h3>centralizando img com text-center&lt;/h3>
+        &lt;div class="container text-center">
+          &lt;img src="original.png" width="150px" height="150px"> 
+          &lt;!-- width e heigh nao se aplicam com a img usando a classe img-fluid -->
+        &lt;/div>
+        &lt;h3>elemento figure e classe figure&lt;/h3>
+        &lt;div class="container text-center">
+          &lt;figure class="figure">
+            &lt;img src="original.png" width="150px" height="150px"> 
+            &lt;figcaption class="figure-caption text-end">legenda da figura&lt;/figcaption>
+          &lt;/figure>
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

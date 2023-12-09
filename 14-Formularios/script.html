@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT 14-Formulários</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">14-Formulários</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container">
+        &lt;form class="p-5 mt-3 bg-warning-subtle rounded-3">
+          &lt;div class="mb-3">
+            &lt;label for="email" class="form-label">E-mail&lt;/label>
+            &lt;input type="email" id="email" class="form-control">
+            &lt;div class="form-text">
+              Nunca compartilharemos se email com terceiros
+            &lt;/div>
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="endereco3" class="form-label">Endereço&lt;/label>
+            &lt;input type="text" id="endereco3" class="form-control form-control-plaintext" placeholder="com form-control form-control-plaintext >bom em atualizacao de cad junto com readony">
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="endereco3" class="form-label">Endereço&lt;/label>
+            &lt;input type="text" id="endereco3" class="form-control form-control-lg" placeholder="com form-control form-control-lg">
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="endereco4" class="form-label">Endereço&lt;/label>
+            &lt;input type="text" id="endereco4" class="form-control form-control-sm" placeholder="com form-control form-control-sm">
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="endereco" class="form-label">Endereço&lt;/label>
+            &lt;input type="text" id="endereco" class="form-control" disabled>
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="endereco2" class="form-label">Endereço&lt;/label>
+            &lt;input type="text" id="endereco2" class="form-control" readonly value="readonly value=...">
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;label for="senha" class="form-label">Senha&lt;/label>
+            &lt;input type="text" id="senha" class="form-control">
+          &lt;/div>
+          &lt;div class="mb-3 form-check">
+            &lt;input type="checkbox" id="lembrar" class="form-check-input">
+            &lt;label for="lembrar" class="form-check-label">Lembrar de mim&lt;/label>
+          &lt;/div>
+          &lt;!-- type submit envia os dados -->
+          &lt;button type="submit" class="btn btn-primary">Entrar&lt;/button>
+        &lt;/form>
+      
+        &lt;div class="my-4 p-4 bg-white">
+          &lt;input type="file" id="arquivo" class="form-control">
+          &lt;input type="color" id="cor" class="form-control">
+          &lt;hr>
+          &lt;div class="mb-3">
+            &lt;label for="" class="form-label">Cidade&lt;/label>
+            &lt;input type="text" placeholder="Digite para buscar" class="form-control" list="cidades">
+            &lt;datalist id="cidades" class="overflow-auto">
+              &lt;option value="Cidade 1">&lt;/option>
+              &lt;option value="Cidade 2">&lt;/option>
+              &lt;option value="Cidade 3">&lt;/option>
+              &lt;option value="Cidade 4">&lt;/option>
+              &lt;option value="Cidade 5">&lt;/option>
+              &lt;option value="Cidade 6">&lt;/option>
+            &lt;/datalist>  
+          &lt;/div>
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Select&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;label for="carro" class="form-label">Modelo carro&lt;/label>
+          &lt;div class="col-8 hstack column-gap-3">
+            &lt;select id="carro" class="form-select form-select-lg">
+              &lt;option value="">option 1&lt;/option>
+              &lt;option value="">option 2&lt;/option>
+              &lt;option value="">option 3&lt;/option>
+              &lt;option value="">option 4&lt;/option>
+            &lt;/select>
+            &lt;select id="carro" class="form-select" multiple size="3">
+              &lt;option value="">option 1&lt;/option>
+              &lt;option value="">option 2&lt;/option>
+              &lt;option value="">option 3&lt;/option>
+              &lt;option value="">option 4&lt;/option>
+              &lt;option value="">option 5&lt;/option>
+              &lt;option value="">option 6&lt;/option>
+            &lt;/select>
+          &lt;/div>
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Range&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;label for="brilho" class="form-label">Brilho da tela&lt;/label>
+          &lt;input type="range" class="form-range" id="brilho" min="0" max="10" step="1" value="2">    
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Botões > "a, input, label"&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;div class="mb-3">
+            &lt;p>button, a, input submit, input reset &#9660;&lt;/p>
+            &lt;button class="btn btn-primary">Cadastrar&lt;/button>
+            &lt;a class="btn btn-primary">Cadastrar&lt;/a>
+            &lt;input type="submit" class="btn btn-primary">&lt;/input>
+            &lt;input type="reset" class="btn btn-primary">&lt;/input>
+          &lt;/div>
+          &lt;div class="mb-3">
+            &lt;button class="btn btn-primary btn-lg">Cadastrar&lt;/button>
+            &lt;button class="btn btn-primary btn-sm">Cadastrar&lt;/button>
+          &lt;/div>
+          &lt;button class="btn btn-outline-primary" data-bs-toggle="button">Marcavel &lt;/button>
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Radio&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;label class="form-check-label">Selecione um curso&lt;/label>
+          &lt;div class="form-check">
+            &lt;label for="administracao" class="form-check-label">Administraçao&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="administracao" name="curso" value="adm">   
+      
+          &lt;/div>
+          &lt;div class="form-check">
+            &lt;label for="engenharia" class="form-check-label">Engenharia&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="engenharia" name="curso" value="eng">    
+          &lt;/div>
+          &lt;p>vai para o servidor com o valor do campo name + o valor de value = chave/valor&lt;/p>
+      
+          &lt;label class="form-check-label d-block">Selecione um curso&lt;/label>
+          &lt;div class="form-check-inline">
+            &lt;label for="administracao" class="form-check-label">Administraçao&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="administracao" name="curso" value="adm">   
+      
+          &lt;/div>
+          &lt;div class="form-check-inline">
+            &lt;label for="engenharia" class="form-check-label">Engenharia&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="engenharia" name="curso" value="eng">    
+          &lt;/div>
+          &lt;p>vai para o servidor com o valor do campo name + o valor de value = chave/valor&lt;/p>
+      
+          &lt;label class="form-check-label d-block">Selecione um curso&lt;/label>
+          &lt;div class="form-check-reverse">
+            &lt;label for="administracao" class="form-check-label">Administraçao&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="administracao" name="curso" value="adm">   
+      
+          &lt;/div>
+          &lt;div class="form-check-reverse">
+            &lt;label for="engenharia" class="form-check-label">Engenharia&lt;/label>
+            &lt;input type="radio" class="form-check-input" id="engenharia" name="curso" value="eng">    
+          &lt;/div>
+          &lt;p>vai para o servidor com o valor do campo name + o valor de value = chave/valor&lt;/p>
+      
+          &lt;div class="my-3">
+            &lt;input type="radio" id="ativado" class="btn-check">
+            &lt;label for="ativado" class="btn btn-outline-primary">Marcavel&lt;/label>
+          &lt;/div>
+      
+          &lt;div class="my-3">
+            &lt;input type="radio" name="tipoEntrega" id="entregarapida" class="btn-check">
+            &lt;label for="entregarapida" class="btn btn-outline-primary">entrega rapida&lt;/label>
+            &lt;input type="radio" name="tipoEntrega" id="entregalenta" class="btn-check">
+            &lt;label for="entregalenta" class="btn btn-outline-primary">entrega lenta&lt;/label>
+          &lt;/div>
+      
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Checkbox tipo switch&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5 form-switch">
+          &lt;input type="checkbox" class="form-check-input" id="dark-mode">
+          &lt;label for="dark-mode" class="form-check-label">Modo noturno&lt;/label>
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Titulo flutuante&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;div class="form-floating mb-3">
+            &lt;input type="text" class="form-control" id="nome" placeholder="ddd">
+            &lt;label for="nome" class="form-label">Nome&lt;/label>
+          &lt;/div>
+          &lt;div class="form-floating mb-3">
+            &lt;textarea name="" id="msg" cols="30" rows="10" class="form-control" placeholder="" style="height: 100px;">&lt;/textarea>
+            &lt;label for="msg">Mensagem&lt;/label>
+          &lt;/div>
+          &lt;div class="form-floating mb-3">
+            &lt;select id="cidade" class="form-select">
+              &lt;option value="">OBS importante, nao funciona com atributo size&lt;/option>
+              &lt;option value="">Cidade 2&lt;/option>
+              &lt;option value="">Cidade 3&lt;/option>
+              &lt;option value="">Cidade 4&lt;/option>
+            &lt;/select>
+            &lt;label for="cidade">Cidade&lt;/label>
+          &lt;/div>
+        &lt;/div>
+      
+        &lt;h1 class="text-white">Complementos de campos&lt;/h1>
+        &lt;div class="bg-warning-subtle p-5">
+          &lt;div class="input-group mb-3">
+            &lt;label for="instagram" class="input-group-text">@&lt;/label>
+            &lt;input type="text" id="instagram" class="form-control">
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;input type="text" placeholder="usuario" class="form-control text-end">
+            &lt;span for="instagram" class="input-group-text">@&lt;/span>
+            &lt;input type="text" placeholder="gmail.com" class="form-control">
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;span for="instagram" class="input-group-text">Nome Completo&lt;/span>
+            &lt;input type="text" placeholder="nome" class="form-control">
+            &lt;input type="text" placeholder="sobrenome" class="form-control">
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;i class="bi bi-bank text-danger input-group-text ">&lt;/i>
+            &lt;div class="form-floating">
+            &lt;input type="text" class="form-control">
+            &lt;label>Mensagem&lt;/label>
+            &lt;/div>
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;label class="input-group-text">Redaçao&lt;/label>
+            &lt;textarea class="form-control" style="height: 100px;">&lt;/textarea>
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;div class="input-group-text">
+              &lt;input type="checkbox" class="form-check-input me-3">
+              &lt;input type="text" class="form-control">
+            &lt;/div>
+          &lt;/div>
+          &lt;div class="input-group mb-3">
+            &lt;input type="search" class="form-control">
+            &lt;button class="btn btn-primary">buscar&lt;/button>
+          &lt;/div>
+        &lt;/div>
+        
+      
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

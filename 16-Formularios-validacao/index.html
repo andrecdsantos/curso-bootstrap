@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous" defer>
+  </script>
+  <link rel="stylesheet" href="./style.css">
+
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+
+  <title>16-Formulários - Validações</title>
+</head>
+
+<body>
+  <h1 class="text-center">16-Formulários - Validações</h1>
+  <div class="container bg-primary-subtle p-5 mt-3 mb-5 rounded-3">
+    <h1 class="display-3">Endereço</h1>
+    <hr>
+    <form method="post" class="needs-validation" novalidate><!-- get>dados pela url, post pelo corpo da REQuisicao -->
+      <div class="row mb-3 g-3"> 
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" id="logradouro" class="form-control" placeholder="gutter g-3 é o espaçamento entre os campos" required>
+          <div class="invalid-feedback">
+            Voce deve informar o logradouro
+          </div>
+          <div class="valid-feedback">
+            logradouro correto
+          </div>
+        </div>
+        <div class="col-2">
+          <label for="numero" class="form-label">Numero</label>
+          <input type="text" id="numero" class="form-control">
+        </div>
+        <div class="col-3">
+          <label for="comlemento" class="form-label">Comlemento</label>
+          <input type="text" id="comlemento" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="bairro" class="form-label">Bairro</label>
+          <input type="text" id="bairro" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="cidade" class="form-label">Cidade</label>
+          <input type="text" id="cidade" class="form-control">
+        </div>
+        <div class="col-6">
+          <label for="estado" class="form-label">Estado</label>
+          <input type="text" id="estado" class="form-control" placeholder="cep> pattern=[0-9]{8} required">
+        </div>
+        <div class="col-2">
+          <label for="cep" class="form-label">Cep</label>
+          <input type="text" id="cep" class="form-control" pattern="[0-9]{8}" required>
+        </div>      
+      </div>
+      <button class="btn btn-primary">Cadastrar</button>
+    </form>
+  </div>
+
+  <div class="container bg-primary-subtle p-5 mt-3 mb-5 rounded-3">
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" id="logradouro" class="form-control is-valid">
+          <div class="invalid-feedback">
+            Voce deve informar o logradouro
+          </div>
+          <div class="valid-feedback">
+            logradouro correto
+          </div>
+        </div>  
+
+        <div class="col-7">
+          <label for="logradouro" class="form-label">Logradouro</label>
+          <input type="text" id="logradouro" class="form-control is-invalid">
+          <div class="invalid-feedback">
+            Voce deve informar o logradouro
+          </div>
+          <div class="valid-feedback">
+            logradouro correto
+          </div>
+      </div>
+    
+  </div>
+
+  <script>
+
+    (() => {
+  'use strict'
+
+  const forms = document.querySelectorAll('.needs-validation')
+
+  Array.from(forms).forEach(form => {
+    form.addEventListener('submit', event => {
+      if (!form.checkValidity()) {
+        event.preventDefault()
+        event.stopPropagation()
+      }
+
+      form.classList.add('was-validated')
+    }, false)
+  })
+})()
+  </script>
+
+
+  
+  <!-- Inicialize o Prism.js -->
+  <script>
+    Prism.highlightAll();
+  </script>
+
+  </body>
+
+</html>

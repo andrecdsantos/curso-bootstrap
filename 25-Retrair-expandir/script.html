@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">25-Regiões Retráteis/Expansíveis</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container my-5">
+
+        &lt;div class="accordion mb-5">
+      
+          &lt;div class="accordion-item">
+            &lt;div class="accordion-header">
+              &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regiao1-item">Região 1&lt;/button>
+            &lt;/div>
+            &lt;div class="accordion-collapse collapse" id="regiao1-item">
+              &lt;div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, aut alias repellat voluptatibus totam consequuntur magni modi nobis hic dolor autem similique aperiam nam veritatis id unde blanditiis eius maiores cumque mollitia error itaque. Omnis minus distinctio repudiandae doloremque ipsa soluta reiciendis atque incidunt, quod possimus, aperiam explicabo optio non?
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+      
+          &lt;div class="accordion-item">
+            &lt;div class="accordion-header">
+              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regiao2-item">Região 2&lt;/button>
+            &lt;/div>
+            &lt;div class="accordion-collapse show" id="regiao2-item">
+              &lt;div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, aut alias repellat voluptatibus totam consequuntur magni modi nobis hic dolor autem similique aperiam nam veritatis id unde blanditiis eius maiores cumque mollitia error itaque. Omnis minus distinctio repudiandae doloremque ipsa soluta reiciendis atque incidunt, quod possimus, aperiam explicabo optio non?
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+      
+        &lt;/div>
+      
+      
+        &lt;h1>Apenas uma opção aberta por vez&lt;/h1>
+        &lt;div class="accordion " id="accordion-opcao-unica">
+      
+          &lt;div class="accordion-item">
+            &lt;div class="accordion-header">
+              &lt;button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#regiao3-item">Região 3&lt;/button>
+            &lt;/div>
+            &lt;div class="accordion-collapse collapse show" id="regiao3-item" data-bs-parent="#accordion-opcao-unica">
+              &lt;div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, aut alias repellat voluptatibus totam consequuntur magni modi nobis hic dolor autem similique aperiam nam veritatis id unde blanditiis eius maiores cumque mollitia error itaque. Omnis minus distinctio repudiandae doloremque ipsa soluta reiciendis atque incidunt, quod possimus, aperiam explicabo optio non?
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+      
+          &lt;div class="accordion-item">
+            &lt;div class="accordion-header">
+              &lt;button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#regiao4-item">Região 4&lt;/button>
+            &lt;/div>
+            &lt;div class="accordion-collapse collapse" id="regiao4-item" data-bs-parent="#accordion-opcao-unica">
+              &lt;div class="accordion-body">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, aut alias repellat voluptatibus totam consequuntur magni modi nobis hic dolor autem similique aperiam nam veritatis id unde blanditiis eius maiores cumque mollitia error itaque. Omnis minus distinctio repudiandae doloremque ipsa soluta reiciendis atque incidunt, quod possimus, aperiam explicabo optio non?
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>
+      
+        &lt;/div>
+      
+      
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">24-Componentes Simples</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;div class="container my-5 pb-5">
+
+        &lt;nav class="breadcrumb" style="--bs-breadcrumb-divider: ' > '">
+          &lt;li class="breadcrumb-item">
+            &lt;a href="#">Home&lt;/a>
+          &lt;/li>
+          &lt;li class="breadcrumb-item">
+            &lt;a href="#">Componentes Simples&lt;/a>
+          &lt;/li>
+          &lt;li class="breadcrumb-item">
+            &lt;a href="#">Html&lt;/a>
+          &lt;/li>
+        &lt;/nav>
+      
+        &lt;div class="d-block text-danger spinner-border spinner-border-sm my-3">&lt;/div>
+        &lt;div class="d-block spinner-grow text-success my-3">&lt;/div>
+        &lt;div class="d-block spinner-grow text-bg-info my-3" style="width: 100px; height: 100px;">&lt;/div>
+        
+        &lt;div class="progress bg-dark my-3">
+          &lt;div class="progress-bar w-50">50%&lt;/div>
+        &lt;/div>
+        &lt;div class="progress bg-dark my-3">
+          &lt;div class="progress-bar progress-bar-striped w-50">50%&lt;/div>
+        &lt;/div>
+        &lt;div class="progress bg-dark my-3" style="height: 50px;">
+          &lt;div class="progress-bar progress-bar-striped progress-bar-animated bg-success w-50" >50%&lt;/div>
+        &lt;/div>
+        &lt;div class="bg-secondary p-5 my-3">
+          &lt;div class="progress">
+            &lt;div class="progress-bar w-25 bg-primary">25%&lt;/div>
+            &lt;div class="progress-bar w-25 bg-warning">50%&lt;/div>
+            &lt;div class="progress-bar w-25 bg-danger">75%&lt;/div>
+          &lt;/div>
+        &lt;/div>
+      
+        &lt;div class="my-3">
+          &lt;button class="btn btn-dark" data-bs-toggle="collapse" data-bs-target="#painel">Mostrar&lt;/button>
+        &lt;/div>
+        &lt;div id="painel" class="collapse collapse-horizontal text-bg-info p-3 rounded">
+          &lt;p class="lead">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+          &lt;/p>
+        &lt;/div>
+      
+        &lt;ul class="pagination pagination-sm justify-content-center my-3">
+          &lt;li class="page-item active">
+            &lt;a href="#" class="page-link">1&lt;/a>
+          &lt;/li>
+          &lt;li class="page-item">
+            &lt;a href="#" class="page-link">2&lt;/a>
+          &lt;/li>
+          &lt;li class="page-item disabled">
+            &lt;a href="#" class="page-link">3&lt;/a>
+          &lt;/li>
+          &lt;li class="page-item">
+            &lt;a href="#" class="page-link">4&lt;/a>
+          &lt;/li>
+        &lt;/ul>
+        
+      &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>

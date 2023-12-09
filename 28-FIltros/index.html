@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/559ba7eecd.js" crossorigin="anonymous" defer></script> <!-- FA -->
+    <script src="../progressbar.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/parallax.js/1.4.2/parallax.min.js" defer></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous" defer></script>
+    <title>28 - Filtros</title>
+
+    <style>
+        .main-btn {
+            padding: 10px 40px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .main-btn:hover{
+            background: royalblue;
+            transition: all .5s ease-in-out;
+        }
+        .active {
+            background: skyblue;
+            transition: all .5s ease-in-out;
+        }
+        .project-box {
+            margin-bottom: 10px;
+            transition: all .5s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="text-bg-info text-center">28 - Filtros</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 class="text-center">Conheça nossos projetos</h3>
+            </div>
+            <div class="p-3"></div>
+            <div class="col-md-12 d-flex align-items-center column-gap-3" id="filter-btn-box">
+                <button class="main-btn filter-btn active col-8 col-md-3" id="all-btn">Todos</button>
+                <button class="main-btn filter-btn col-8 col-md-3" id="dev-btn">Desenvolvimento</button>
+                <button class="main-btn filter-btn col-8 col-md-3" id="dsg-btn">Design</button>
+                <button class="main-btn filter-btn col-8 col-md-3" id="seo-btn">SEO</button>
+            </div>
+            <div class="col-md-4 project-box dev">
+                <img src="../img/proj1.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-box dsg">
+                <img src="../img/proj2.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-box seo">
+                <img src="../img/proj3.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-box dev">
+                <img src="../img/proj4.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-box dsg">
+                <img src="../img/proj5.jpg" class="img-fluid">
+            </div>
+            <div class="col-md-4 project-box dev">
+                <img src="../img/proj6.jpg" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+                    let filterBtns = document.querySelectorAll('.filter-btn');
+                    let projectBoxes = document.querySelectorAll('.project-box');
+
+                    filterBtns.forEach(function (filterBtn) {
+                        filterBtn.addEventListener('click', function () {
+                            // Remova a classe 'active' de todos os botões
+                            filterBtns.forEach(function (btn) {
+                                btn.classList.remove('active');
+                            });
+
+                            // Adicione a classe 'active' apenas ao botão clicado
+                            filterBtn.classList.add('active');
+
+                            // Obtém a categoria do botão clicado
+                            let category = filterBtn.id.replace('-btn', '');
+
+                            // Oculta os projetos
+                            projectBoxes.forEach(function (projectBox) {
+                                projectBox.style.opacity = 0;
+                                projectBox.style.display = 'none';
+                            });
+
+                            // Mostra ou oculta os projetos com base na categoria
+                            projectBoxes.forEach(function (projectBox) {
+                                if (category === 'all' || projectBox.classList.contains(category)) {
+                                    // Mostra os projetos
+                                    projectBox.style.display = 'block';
+
+                                    // Adiciona um pequeno atraso para garantir que a transição seja aplicada corretamente
+                                    setTimeout(() => {
+                                        projectBox.style.opacity = 1;
+                                    }, 50);
+                                }else {
+                                    
+                                }
+                            });
+
+
+                            /* 
+                            TRANSICAO AO REMOVER IMAGENS
+                            projectBoxes.forEach(function (projectBox) {
+                                projectBoxes.forEach(function (projectBox) {
+                                if (category === 'all' || projectBox.classList.contains(category)) {
+                                    // Mostra os projetos
+                                    projectBox.style.display = 'block';
+
+                                    // Adiciona um pequeno atraso para garantir que a transição seja aplicada corretamente
+                                    setTimeout(() => {
+                                        projectBox.style.opacity = 1;
+                                    }, 50);
+                                } else {
+                                    // Oculta os projetos com uma transição suave
+                                    projectBox.style.opacity = 0;
+
+                                    // Adiciona um pequeno atraso antes de esconder os projetos
+                                    setTimeout(() => {
+                                        projectBox.style.display = 'none';
+                                    }, 00);
+                                }
+                            });
+                            });
+                            */
+
+
+                        });
+                    });
+                });
+    </script>
+
+</body>
+</html>

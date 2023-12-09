@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="./style.css">
+  <title>SCRIPT Deslizantes</title>
+  <!-- biblioteta prims.js para mostrar o script com cores no html -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/themes/prism.min.css">
+  <!-- biblioteca Prism.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/prism.min.js" defer></script>
+  <!-- Se você quiser suporte a linha-numbers, adicione o seguinte script -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.25.0/plugins/line-numbers/prism-line-numbers.min.js" defer></script>
+  <script defer>
+    Prism.highlightAll();
+  </script>
+</head>
+
+<body>
+    <h1 style="text-align: center;">23-Paineis Deslizantes</h1>
+    <pre class="my-3 language-html line-numbers">
+      <code>
+        &lt;nav class="navbar bg-dark navbar-dark">
+        &lt;div class="container">
+          &lt;a href="#" class="navbar-brand">OffCanvas&lt;/a>
+          &lt;div>
+            &lt;button class="btn btn-secondary" data-bs-toggle="offcanvas" data-bs-target="#painel">&#9776;&lt;/button>
+            &lt;a href="#painel" class="btn btn-success" data-bs-toggle="offcanvas">&#9776;&lt;/a>
+          &lt;/div>
+        &lt;/div>
+      &lt;/nav>
+      
+      &lt;!-- data-bs-backdrop="false" -->
+      &lt;div class="offcanvas offcanvas-end" id="painel" tabindex="-1" data-bs-scroll="false"  data-bs-backdrop="static" style="--bs-offcanvas-width:500px;">
+        &lt;div class="offcanvas-header">
+          &lt;h5 class="offcanvas-title">Painel&lt;/h5>
+          &lt;button class="btn-close" data-bs-dismiss="offcanvas">&lt;/button>
+        &lt;/div>
+        &lt;div class="offcanvas-body">
+          &lt;ul>
+            &lt;li>item 1&lt;/li>
+            &lt;li>item 2&lt;/li>
+            &lt;li>item 3&lt;/li>
+          &lt;/ul>
+        &lt;/div>
+      &lt;/div>
+      
+        &lt;div class="container my-5">
+          &lt;p class="lead">Lorem...&lt;/p>
+          &lt;p class="lead">Lorem...&lt;/p>
+          &lt;p class="lead">Lorem...&lt;/p>
+          &lt;p class="lead">Lorem...&lt;/p>
+        &lt;/div>
+      </code>
+    </pre>
+</body>
+
+</html>
